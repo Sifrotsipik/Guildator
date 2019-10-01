@@ -45,6 +45,10 @@
             this.lblRegistrationCharacterName = new System.Windows.Forms.Label();
             this.btnRegistrationConfirmation = new System.Windows.Forms.Button();
             this.lblkRegistrationConnexion = new System.Windows.Forms.LinkLabel();
+            this.lblRegistrationRole = new System.Windows.Forms.Label();
+            this.cbRegistrationTank = new System.Windows.Forms.CheckBox();
+            this.cbRegistrationDps = new System.Windows.Forms.CheckBox();
+            this.cbRegistrationHeal = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // lblRegistrationAccountInformations
@@ -199,7 +203,7 @@
             // 
             // btnRegistrationConfirmation
             // 
-            this.btnRegistrationConfirmation.Location = new System.Drawing.Point(133, 547);
+            this.btnRegistrationConfirmation.Location = new System.Drawing.Point(158, 601);
             this.btnRegistrationConfirmation.Name = "btnRegistrationConfirmation";
             this.btnRegistrationConfirmation.Size = new System.Drawing.Size(86, 27);
             this.btnRegistrationConfirmation.TabIndex = 15;
@@ -209,18 +213,61 @@
             // lblkRegistrationConnexion
             // 
             this.lblkRegistrationConnexion.AutoSize = true;
-            this.lblkRegistrationConnexion.Location = new System.Drawing.Point(42, 613);
+            this.lblkRegistrationConnexion.Location = new System.Drawing.Point(41, 645);
             this.lblkRegistrationConnexion.Name = "lblkRegistrationConnexion";
             this.lblkRegistrationConnexion.Size = new System.Drawing.Size(320, 17);
             this.lblkRegistrationConnexion.TabIndex = 16;
             this.lblkRegistrationConnexion.TabStop = true;
             this.lblkRegistrationConnexion.Text = "Déjà un compte ? Cliquez ici pour vous connecter";
             // 
+            // lblRegistrationRole
+            // 
+            this.lblRegistrationRole.AutoSize = true;
+            this.lblRegistrationRole.Location = new System.Drawing.Point(52, 536);
+            this.lblRegistrationRole.Name = "lblRegistrationRole";
+            this.lblRegistrationRole.Size = new System.Drawing.Size(45, 17);
+            this.lblRegistrationRole.TabIndex = 17;
+            this.lblRegistrationRole.Text = "Rôle :";
+            // 
+            // cbRegistrationTank
+            // 
+            this.cbRegistrationTank.AutoSize = true;
+            this.cbRegistrationTank.Location = new System.Drawing.Point(158, 532);
+            this.cbRegistrationTank.Name = "cbRegistrationTank";
+            this.cbRegistrationTank.Size = new System.Drawing.Size(67, 21);
+            this.cbRegistrationTank.TabIndex = 18;
+            this.cbRegistrationTank.Text = "TANK";
+            this.cbRegistrationTank.UseVisualStyleBackColor = true;
+            // 
+            // cbRegistrationDps
+            // 
+            this.cbRegistrationDps.AutoSize = true;
+            this.cbRegistrationDps.Location = new System.Drawing.Point(303, 532);
+            this.cbRegistrationDps.Name = "cbRegistrationDps";
+            this.cbRegistrationDps.Size = new System.Drawing.Size(58, 21);
+            this.cbRegistrationDps.TabIndex = 19;
+            this.cbRegistrationDps.Text = "DPS";
+            this.cbRegistrationDps.UseVisualStyleBackColor = true;
+            // 
+            // cbRegistrationHeal
+            // 
+            this.cbRegistrationHeal.AutoSize = true;
+            this.cbRegistrationHeal.Location = new System.Drawing.Point(231, 532);
+            this.cbRegistrationHeal.Name = "cbRegistrationHeal";
+            this.cbRegistrationHeal.Size = new System.Drawing.Size(66, 21);
+            this.cbRegistrationHeal.TabIndex = 20;
+            this.cbRegistrationHeal.Text = "HEAL";
+            this.cbRegistrationHeal.UseVisualStyleBackColor = true;
+            // 
             // frmRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(416, 700);
+            this.Controls.Add(this.cbRegistrationHeal);
+            this.Controls.Add(this.cbRegistrationDps);
+            this.Controls.Add(this.cbRegistrationTank);
+            this.Controls.Add(this.lblRegistrationRole);
             this.Controls.Add(this.lblkRegistrationConnexion);
             this.Controls.Add(this.btnRegistrationConfirmation);
             this.Controls.Add(this.lblRegistrationCharacterName);
@@ -264,5 +311,9 @@
         private System.Windows.Forms.Label lblRegistrationCharacterName;
         private System.Windows.Forms.Button btnRegistrationConfirmation;
         private System.Windows.Forms.LinkLabel lblkRegistrationConnexion;
+        private System.Windows.Forms.Label lblRegistrationRole;
+        private System.Windows.Forms.CheckBox cbRegistrationTank;
+        private System.Windows.Forms.CheckBox cbRegistrationDps;
+        private System.Windows.Forms.CheckBox cbRegistrationHeal;
     }
 }
