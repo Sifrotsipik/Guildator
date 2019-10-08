@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Guildator
 {
-    public partial class frmHome : Form
+    public partial class frmGuildCreation : Form
     {
-        public frmHome()
+        public frmGuildCreation()
         {
             InitializeComponent();
-        }
-
-        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
-        {
-
         }
     }
 }

@@ -43,18 +43,20 @@
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.lblRegistrationCharacterName = new System.Windows.Forms.Label();
-            this.btnRegistrationConfirmation = new System.Windows.Forms.Button();
+            this.btnRegistrationNext = new System.Windows.Forms.Button();
             this.lblkRegistrationConnexion = new System.Windows.Forms.LinkLabel();
             this.lblRegistrationRole = new System.Windows.Forms.Label();
             this.cbRegistrationTank = new System.Windows.Forms.CheckBox();
             this.cbRegistrationDps = new System.Windows.Forms.CheckBox();
             this.cbRegistrationHeal = new System.Windows.Forms.CheckBox();
+            this.btnRegistrationBack = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblRegistrationAccountInformations
             // 
             this.lblRegistrationAccountInformations.AutoSize = true;
-            this.lblRegistrationAccountInformations.Location = new System.Drawing.Point(87, 48);
+            this.lblRegistrationAccountInformations.Location = new System.Drawing.Point(87, 28);
             this.lblRegistrationAccountInformations.Name = "lblRegistrationAccountInformations";
             this.lblRegistrationAccountInformations.Size = new System.Drawing.Size(217, 17);
             this.lblRegistrationAccountInformations.TabIndex = 0;
@@ -63,7 +65,7 @@
             // lblRegistrationEmail
             // 
             this.lblRegistrationEmail.AutoSize = true;
-            this.lblRegistrationEmail.Location = new System.Drawing.Point(52, 122);
+            this.lblRegistrationEmail.Location = new System.Drawing.Point(52, 68);
             this.lblRegistrationEmail.Name = "lblRegistrationEmail";
             this.lblRegistrationEmail.Size = new System.Drawing.Size(97, 17);
             this.lblRegistrationEmail.TabIndex = 1;
@@ -72,7 +74,7 @@
             // lblRegistrationPassword
             // 
             this.lblRegistrationPassword.AutoSize = true;
-            this.lblRegistrationPassword.Location = new System.Drawing.Point(52, 164);
+            this.lblRegistrationPassword.Location = new System.Drawing.Point(52, 133);
             this.lblRegistrationPassword.Name = "lblRegistrationPassword";
             this.lblRegistrationPassword.Size = new System.Drawing.Size(101, 17);
             this.lblRegistrationPassword.TabIndex = 2;
@@ -80,14 +82,14 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(190, 122);
+            this.textBox1.Location = new System.Drawing.Point(190, 68);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(136, 22);
             this.textBox1.TabIndex = 3;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(190, 164);
+            this.textBox2.Location = new System.Drawing.Point(190, 133);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(136, 22);
             this.textBox2.TabIndex = 4;
@@ -95,7 +97,7 @@
             // lblRegistrationCharacterTitle
             // 
             this.lblRegistrationCharacterTitle.AutoSize = true;
-            this.lblRegistrationCharacterTitle.Location = new System.Drawing.Point(87, 240);
+            this.lblRegistrationCharacterTitle.Location = new System.Drawing.Point(87, 192);
             this.lblRegistrationCharacterTitle.Name = "lblRegistrationCharacterTitle";
             this.lblRegistrationCharacterTitle.Size = new System.Drawing.Size(185, 17);
             this.lblRegistrationCharacterTitle.TabIndex = 5;
@@ -104,7 +106,7 @@
             // lblRegistrationFaction
             // 
             this.lblRegistrationFaction.AutoSize = true;
-            this.lblRegistrationFaction.Location = new System.Drawing.Point(52, 361);
+            this.lblRegistrationFaction.Location = new System.Drawing.Point(52, 295);
             this.lblRegistrationFaction.Name = "lblRegistrationFaction";
             this.lblRegistrationFaction.Size = new System.Drawing.Size(62, 17);
             this.lblRegistrationFaction.TabIndex = 6;
@@ -113,7 +115,7 @@
             // rbRegistrationAlliance
             // 
             this.rbRegistrationAlliance.AutoSize = true;
-            this.rbRegistrationAlliance.Location = new System.Drawing.Point(158, 357);
+            this.rbRegistrationAlliance.Location = new System.Drawing.Point(158, 295);
             this.rbRegistrationAlliance.Name = "rbRegistrationAlliance";
             this.rbRegistrationAlliance.Size = new System.Drawing.Size(78, 21);
             this.rbRegistrationAlliance.TabIndex = 7;
@@ -124,7 +126,7 @@
             // rbRegistrationHorde
             // 
             this.rbRegistrationHorde.AutoSize = true;
-            this.rbRegistrationHorde.Location = new System.Drawing.Point(242, 357);
+            this.rbRegistrationHorde.Location = new System.Drawing.Point(242, 295);
             this.rbRegistrationHorde.Name = "rbRegistrationHorde";
             this.rbRegistrationHorde.Size = new System.Drawing.Size(68, 21);
             this.rbRegistrationHorde.TabIndex = 8;
@@ -135,7 +137,7 @@
             // lblRegistrationRace
             // 
             this.lblRegistrationRace.AutoSize = true;
-            this.lblRegistrationRace.Location = new System.Drawing.Point(52, 426);
+            this.lblRegistrationRace.Location = new System.Drawing.Point(52, 349);
             this.lblRegistrationRace.Name = "lblRegistrationRace";
             this.lblRegistrationRace.Size = new System.Drawing.Size(49, 17);
             this.lblRegistrationRace.TabIndex = 9;
@@ -151,7 +153,7 @@
             "Gnome",
             "Humain",
             "Nain"});
-            this.listBox1.Location = new System.Drawing.Point(158, 426);
+            this.listBox1.Location = new System.Drawing.Point(158, 349);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(175, 20);
             this.listBox1.TabIndex = 10;
@@ -159,7 +161,7 @@
             // lblRegistrationClass
             // 
             this.lblRegistrationClass.AutoSize = true;
-            this.lblRegistrationClass.Location = new System.Drawing.Point(52, 481);
+            this.lblRegistrationClass.Location = new System.Drawing.Point(52, 403);
             this.lblRegistrationClass.Name = "lblRegistrationClass";
             this.lblRegistrationClass.Size = new System.Drawing.Size(62, 17);
             this.lblRegistrationClass.TabIndex = 11;
@@ -180,14 +182,14 @@
             "Druide",
             "Mage",
             "Prêtre"});
-            this.listBox2.Location = new System.Drawing.Point(158, 481);
+            this.listBox2.Location = new System.Drawing.Point(158, 403);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(175, 20);
             this.listBox2.TabIndex = 12;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(190, 298);
+            this.textBox3.Location = new System.Drawing.Point(158, 241);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(136, 22);
             this.textBox3.TabIndex = 13;
@@ -195,20 +197,20 @@
             // lblRegistrationCharacterName
             // 
             this.lblRegistrationCharacterName.AutoSize = true;
-            this.lblRegistrationCharacterName.Location = new System.Drawing.Point(52, 301);
+            this.lblRegistrationCharacterName.Location = new System.Drawing.Point(52, 241);
             this.lblRegistrationCharacterName.Name = "lblRegistrationCharacterName";
             this.lblRegistrationCharacterName.Size = new System.Drawing.Size(45, 17);
             this.lblRegistrationCharacterName.TabIndex = 14;
             this.lblRegistrationCharacterName.Text = "Nom :";
             // 
-            // btnRegistrationConfirmation
+            // btnRegistrationNext
             // 
-            this.btnRegistrationConfirmation.Location = new System.Drawing.Point(158, 601);
-            this.btnRegistrationConfirmation.Name = "btnRegistrationConfirmation";
-            this.btnRegistrationConfirmation.Size = new System.Drawing.Size(86, 27);
-            this.btnRegistrationConfirmation.TabIndex = 15;
-            this.btnRegistrationConfirmation.Text = "S\'inscrire";
-            this.btnRegistrationConfirmation.UseVisualStyleBackColor = true;
+            this.btnRegistrationNext.Location = new System.Drawing.Point(242, 593);
+            this.btnRegistrationNext.Name = "btnRegistrationNext";
+            this.btnRegistrationNext.Size = new System.Drawing.Size(84, 27);
+            this.btnRegistrationNext.TabIndex = 15;
+            this.btnRegistrationNext.Text = "Suivant";
+            this.btnRegistrationNext.UseVisualStyleBackColor = true;
             // 
             // lblkRegistrationConnexion
             // 
@@ -223,7 +225,7 @@
             // lblRegistrationRole
             // 
             this.lblRegistrationRole.AutoSize = true;
-            this.lblRegistrationRole.Location = new System.Drawing.Point(52, 536);
+            this.lblRegistrationRole.Location = new System.Drawing.Point(52, 465);
             this.lblRegistrationRole.Name = "lblRegistrationRole";
             this.lblRegistrationRole.Size = new System.Drawing.Size(45, 17);
             this.lblRegistrationRole.TabIndex = 17;
@@ -232,7 +234,7 @@
             // cbRegistrationTank
             // 
             this.cbRegistrationTank.AutoSize = true;
-            this.cbRegistrationTank.Location = new System.Drawing.Point(158, 532);
+            this.cbRegistrationTank.Location = new System.Drawing.Point(158, 465);
             this.cbRegistrationTank.Name = "cbRegistrationTank";
             this.cbRegistrationTank.Size = new System.Drawing.Size(67, 21);
             this.cbRegistrationTank.TabIndex = 18;
@@ -242,7 +244,7 @@
             // cbRegistrationDps
             // 
             this.cbRegistrationDps.AutoSize = true;
-            this.cbRegistrationDps.Location = new System.Drawing.Point(303, 532);
+            this.cbRegistrationDps.Location = new System.Drawing.Point(300, 465);
             this.cbRegistrationDps.Name = "cbRegistrationDps";
             this.cbRegistrationDps.Size = new System.Drawing.Size(58, 21);
             this.cbRegistrationDps.TabIndex = 19;
@@ -252,24 +254,44 @@
             // cbRegistrationHeal
             // 
             this.cbRegistrationHeal.AutoSize = true;
-            this.cbRegistrationHeal.Location = new System.Drawing.Point(231, 532);
+            this.cbRegistrationHeal.Location = new System.Drawing.Point(228, 465);
             this.cbRegistrationHeal.Name = "cbRegistrationHeal";
             this.cbRegistrationHeal.Size = new System.Drawing.Size(66, 21);
             this.cbRegistrationHeal.TabIndex = 20;
             this.cbRegistrationHeal.Text = "HEAL";
             this.cbRegistrationHeal.UseVisualStyleBackColor = true;
             // 
+            // btnRegistrationBack
+            // 
+            this.btnRegistrationBack.Location = new System.Drawing.Point(90, 593);
+            this.btnRegistrationBack.Name = "btnRegistrationBack";
+            this.btnRegistrationBack.Size = new System.Drawing.Size(82, 27);
+            this.btnRegistrationBack.TabIndex = 21;
+            this.btnRegistrationBack.Text = "Retour";
+            this.btnRegistrationBack.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(55, 532);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 17);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "label1";
+            // 
             // frmRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(416, 700);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnRegistrationBack);
             this.Controls.Add(this.cbRegistrationHeal);
             this.Controls.Add(this.cbRegistrationDps);
             this.Controls.Add(this.cbRegistrationTank);
             this.Controls.Add(this.lblRegistrationRole);
             this.Controls.Add(this.lblkRegistrationConnexion);
-            this.Controls.Add(this.btnRegistrationConfirmation);
+            this.Controls.Add(this.btnRegistrationNext);
             this.Controls.Add(this.lblRegistrationCharacterName);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.listBox2);
@@ -309,11 +331,13 @@
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label lblRegistrationCharacterName;
-        private System.Windows.Forms.Button btnRegistrationConfirmation;
+        private System.Windows.Forms.Button btnRegistrationNext;
         private System.Windows.Forms.LinkLabel lblkRegistrationConnexion;
         private System.Windows.Forms.Label lblRegistrationRole;
         private System.Windows.Forms.CheckBox cbRegistrationTank;
         private System.Windows.Forms.CheckBox cbRegistrationDps;
         private System.Windows.Forms.CheckBox cbRegistrationHeal;
+        private System.Windows.Forms.Button btnRegistrationBack;
+        private System.Windows.Forms.Label label1;
     }
 }
