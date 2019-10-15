@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Guildator
 {
-    public partial class frmGuildSearch : Form
+    public partial class frmHomeGuildMaster : Form
     {
-        public frmGuildSearch()
+        public frmHomeGuildMaster()
         {
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {
 
         }
