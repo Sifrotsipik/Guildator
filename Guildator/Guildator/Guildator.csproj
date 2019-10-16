@@ -76,6 +76,12 @@
     <Compile Include="frmHomePlayer.Designer.cs">
       <DependentUpon>frmHomePlayer.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRaidDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRaidDetails.Designer.cs">
+      <DependentUpon>frmRaidDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRegistration.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRaidDetails.resx">
+      <DependentUpon>frmRaidDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegistration.resx">
       <DependentUpon>frmRegistration.cs</DependentUpon>

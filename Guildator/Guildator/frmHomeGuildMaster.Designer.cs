@@ -34,33 +34,25 @@
             this.tpHomeGuildRaid = new System.Windows.Forms.TabPage();
             this.lblHomeRaidList = new System.Windows.Forms.Label();
             this.lblHomeRaidDateSelection = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvRaidList = new System.Windows.Forms.DataGridView();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.tpRoster = new System.Windows.Forms.TabPage();
-            this.lblHomeGuildMasterRaidInvitations = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.lblHomeGuildMasterRaidDetails = new System.Windows.Forms.Label();
-            this.lblHomeGuildMasterRaidDateTitle = new System.Windows.Forms.Label();
-            this.lblHomeGuildMasterRaidDate = new System.Windows.Forms.Label();
-            this.lblHomeGuildMasterRaidParticipantsTitle = new System.Windows.Forms.Label();
-            this.lblHomeGuildMasterRaidParticipantsNumber = new System.Windows.Forms.Label();
-            this.Roster = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Classe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Rôle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.fd = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.raidName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.raidinvites = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.raidRoster = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.raidParticipants = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.gbHomeGuildMasterGuildMembersList = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.playerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.playerGrade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.playerDetails = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.gbHomeGuildMasterGuildDemands = new System.Windows.Forms.GroupBox();
             this.tcHomeGuildInfomations.SuspendLayout();
+            this.tpHomeGuildMembers.SuspendLayout();
             this.tpHomeGuildRaid.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRaidList)).BeginInit();
+            this.gbHomeGuildMasterGuildMembersList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // tcHomeGuildInfomations
@@ -73,15 +65,17 @@
             this.tcHomeGuildInfomations.Location = new System.Drawing.Point(2, 0);
             this.tcHomeGuildInfomations.Name = "tcHomeGuildInfomations";
             this.tcHomeGuildInfomations.SelectedIndex = 0;
-            this.tcHomeGuildInfomations.Size = new System.Drawing.Size(1181, 642);
+            this.tcHomeGuildInfomations.Size = new System.Drawing.Size(754, 642);
             this.tcHomeGuildInfomations.TabIndex = 0;
             // 
             // tpHomeGuildMembers
             // 
+            this.tpHomeGuildMembers.Controls.Add(this.gbHomeGuildMasterGuildDemands);
+            this.tpHomeGuildMembers.Controls.Add(this.gbHomeGuildMasterGuildMembersList);
             this.tpHomeGuildMembers.Location = new System.Drawing.Point(4, 25);
             this.tpHomeGuildMembers.Name = "tpHomeGuildMembers";
             this.tpHomeGuildMembers.Padding = new System.Windows.Forms.Padding(3);
-            this.tpHomeGuildMembers.Size = new System.Drawing.Size(1173, 613);
+            this.tpHomeGuildMembers.Size = new System.Drawing.Size(746, 613);
             this.tpHomeGuildMembers.TabIndex = 0;
             this.tpHomeGuildMembers.Text = "Membres";
             this.tpHomeGuildMembers.UseVisualStyleBackColor = true;
@@ -91,36 +85,21 @@
             this.tpHomeGuildEvents.Location = new System.Drawing.Point(4, 25);
             this.tpHomeGuildEvents.Name = "tpHomeGuildEvents";
             this.tpHomeGuildEvents.Padding = new System.Windows.Forms.Padding(3);
-            this.tpHomeGuildEvents.Size = new System.Drawing.Size(1173, 613);
+            this.tpHomeGuildEvents.Size = new System.Drawing.Size(746, 613);
             this.tpHomeGuildEvents.TabIndex = 2;
             this.tpHomeGuildEvents.Text = "Evénements";
             this.tpHomeGuildEvents.UseVisualStyleBackColor = true;
             // 
             // tpHomeGuildRaid
             // 
-            this.tpHomeGuildRaid.Controls.Add(this.label7);
-            this.tpHomeGuildRaid.Controls.Add(this.label6);
-            this.tpHomeGuildRaid.Controls.Add(this.label3);
-            this.tpHomeGuildRaid.Controls.Add(this.label5);
-            this.tpHomeGuildRaid.Controls.Add(this.label4);
-            this.tpHomeGuildRaid.Controls.Add(this.fd);
-            this.tpHomeGuildRaid.Controls.Add(this.label2);
-            this.tpHomeGuildRaid.Controls.Add(this.label1);
-            this.tpHomeGuildRaid.Controls.Add(this.lblHomeGuildMasterRaidParticipantsNumber);
-            this.tpHomeGuildRaid.Controls.Add(this.lblHomeGuildMasterRaidParticipantsTitle);
-            this.tpHomeGuildRaid.Controls.Add(this.lblHomeGuildMasterRaidDate);
-            this.tpHomeGuildRaid.Controls.Add(this.lblHomeGuildMasterRaidDateTitle);
-            this.tpHomeGuildRaid.Controls.Add(this.lblHomeGuildMasterRaidDetails);
-            this.tpHomeGuildRaid.Controls.Add(this.dataGridView2);
-            this.tpHomeGuildRaid.Controls.Add(this.lblHomeGuildMasterRaidInvitations);
             this.tpHomeGuildRaid.Controls.Add(this.lblHomeRaidList);
             this.tpHomeGuildRaid.Controls.Add(this.lblHomeRaidDateSelection);
-            this.tpHomeGuildRaid.Controls.Add(this.dataGridView1);
+            this.tpHomeGuildRaid.Controls.Add(this.dgvRaidList);
             this.tpHomeGuildRaid.Controls.Add(this.monthCalendar1);
             this.tpHomeGuildRaid.Location = new System.Drawing.Point(4, 25);
             this.tpHomeGuildRaid.Name = "tpHomeGuildRaid";
             this.tpHomeGuildRaid.Padding = new System.Windows.Forms.Padding(3);
-            this.tpHomeGuildRaid.Size = new System.Drawing.Size(1173, 613);
+            this.tpHomeGuildRaid.Size = new System.Drawing.Size(746, 613);
             this.tpHomeGuildRaid.TabIndex = 3;
             this.tpHomeGuildRaid.Text = "Raids";
             this.tpHomeGuildRaid.UseVisualStyleBackColor = true;
@@ -128,7 +107,7 @@
             // lblHomeRaidList
             // 
             this.lblHomeRaidList.AutoSize = true;
-            this.lblHomeRaidList.Location = new System.Drawing.Point(41, 298);
+            this.lblHomeRaidList.Location = new System.Drawing.Point(9, 298);
             this.lblHomeRaidList.Name = "lblHomeRaidList";
             this.lblHomeRaidList.Size = new System.Drawing.Size(100, 17);
             this.lblHomeRaidList.TabIndex = 3;
@@ -143,15 +122,21 @@
             this.lblHomeRaidDateSelection.TabIndex = 2;
             this.lblHomeRaidDateSelection.Text = "Sélectionner une date pour afficher les raids prévus";
             // 
-            // dataGridView1
+            // dgvRaidList
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 371);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(528, 202);
-            this.dataGridView1.TabIndex = 1;
+            this.dgvRaidList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRaidList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.raidName,
+            this.raidinvites,
+            this.raidRoster,
+            this.raidParticipants});
+            this.dgvRaidList.Location = new System.Drawing.Point(12, 318);
+            this.dgvRaidList.Name = "dgvRaidList";
+            this.dgvRaidList.RowHeadersWidth = 51;
+            this.dgvRaidList.RowTemplate.Height = 24;
+            this.dgvRaidList.Size = new System.Drawing.Size(528, 255);
+            this.dgvRaidList.TabIndex = 1;
+            this.dgvRaidList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // monthCalendar1
             // 
@@ -166,200 +151,107 @@
             this.tpRoster.Location = new System.Drawing.Point(4, 25);
             this.tpRoster.Name = "tpRoster";
             this.tpRoster.Padding = new System.Windows.Forms.Padding(3);
-            this.tpRoster.Size = new System.Drawing.Size(1173, 613);
+            this.tpRoster.Size = new System.Drawing.Size(746, 613);
             this.tpRoster.TabIndex = 4;
             this.tpRoster.Text = "Roster";
             this.tpRoster.UseVisualStyleBackColor = true;
             // 
-            // lblHomeGuildMasterRaidInvitations
+            // raidName
             // 
-            this.lblHomeGuildMasterRaidInvitations.AutoSize = true;
-            this.lblHomeGuildMasterRaidInvitations.Location = new System.Drawing.Point(566, 210);
-            this.lblHomeGuildMasterRaidInvitations.Name = "lblHomeGuildMasterRaidInvitations";
-            this.lblHomeGuildMasterRaidInvitations.Size = new System.Drawing.Size(109, 17);
-            this.lblHomeGuildMasterRaidInvitations.TabIndex = 4;
-            this.lblHomeGuildMasterRaidInvitations.Text = "Liste des invités";
+            this.raidName.HeaderText = "Nom";
+            this.raidName.MinimumWidth = 6;
+            this.raidName.Name = "raidName";
+            this.raidName.Width = 125;
             // 
-            // dataGridView2
+            // raidinvites
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Roster,
-            this.Nom,
-            this.Classe,
-            this.Rôle,
-            this.Status});
-            this.dataGridView2.Location = new System.Drawing.Point(569, 230);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(530, 343);
-            this.dataGridView2.TabIndex = 5;
+            this.raidinvites.HeaderText = "Invités";
+            this.raidinvites.MinimumWidth = 6;
+            this.raidinvites.Name = "raidinvites";
+            this.raidinvites.Width = 125;
             // 
-            // lblHomeGuildMasterRaidDetails
+            // raidRoster
             // 
-            this.lblHomeGuildMasterRaidDetails.AutoSize = true;
-            this.lblHomeGuildMasterRaidDetails.Location = new System.Drawing.Point(566, 23);
-            this.lblHomeGuildMasterRaidDetails.Name = "lblHomeGuildMasterRaidDetails";
-            this.lblHomeGuildMasterRaidDetails.Size = new System.Drawing.Size(133, 17);
-            this.lblHomeGuildMasterRaidDetails.TabIndex = 6;
-            this.lblHomeGuildMasterRaidDetails.Text = "Informations du raid";
+            this.raidRoster.HeaderText = "Roster";
+            this.raidRoster.MinimumWidth = 6;
+            this.raidRoster.Name = "raidRoster";
+            this.raidRoster.Width = 125;
             // 
-            // lblHomeGuildMasterRaidDateTitle
+            // raidParticipants
             // 
-            this.lblHomeGuildMasterRaidDateTitle.AutoSize = true;
-            this.lblHomeGuildMasterRaidDateTitle.Location = new System.Drawing.Point(581, 52);
-            this.lblHomeGuildMasterRaidDateTitle.Name = "lblHomeGuildMasterRaidDateTitle";
-            this.lblHomeGuildMasterRaidDateTitle.Size = new System.Drawing.Size(94, 17);
-            this.lblHomeGuildMasterRaidDateTitle.TabIndex = 7;
-            this.lblHomeGuildMasterRaidDateTitle.Text = "Date du raid :";
+            this.raidParticipants.HeaderText = "Participants";
+            this.raidParticipants.MinimumWidth = 6;
+            this.raidParticipants.Name = "raidParticipants";
+            this.raidParticipants.Width = 125;
             // 
-            // lblHomeGuildMasterRaidDate
+            // gbHomeGuildMasterGuildMembersList
             // 
-            this.lblHomeGuildMasterRaidDate.AutoSize = true;
-            this.lblHomeGuildMasterRaidDate.Location = new System.Drawing.Point(681, 52);
-            this.lblHomeGuildMasterRaidDate.Name = "lblHomeGuildMasterRaidDate";
-            this.lblHomeGuildMasterRaidDate.Size = new System.Drawing.Size(82, 17);
-            this.lblHomeGuildMasterRaidDate.TabIndex = 8;
-            this.lblHomeGuildMasterRaidDate.Text = "dd.mm.yyyy";
+            this.gbHomeGuildMasterGuildMembersList.Controls.Add(this.dataGridView1);
+            this.gbHomeGuildMasterGuildMembersList.Location = new System.Drawing.Point(16, 6);
+            this.gbHomeGuildMasterGuildMembersList.Name = "gbHomeGuildMasterGuildMembersList";
+            this.gbHomeGuildMasterGuildMembersList.Size = new System.Drawing.Size(331, 601);
+            this.gbHomeGuildMasterGuildMembersList.TabIndex = 0;
+            this.gbHomeGuildMasterGuildMembersList.TabStop = false;
+            this.gbHomeGuildMasterGuildMembersList.Text = "Liste des membres";
+            this.gbHomeGuildMasterGuildMembersList.Enter += new System.EventHandler(this.gbHomeGuildMasterGuildMembersList_Enter);
             // 
-            // lblHomeGuildMasterRaidParticipantsTitle
+            // dataGridView1
             // 
-            this.lblHomeGuildMasterRaidParticipantsTitle.AutoSize = true;
-            this.lblHomeGuildMasterRaidParticipantsTitle.Location = new System.Drawing.Point(581, 97);
-            this.lblHomeGuildMasterRaidParticipantsTitle.Name = "lblHomeGuildMasterRaidParticipantsTitle";
-            this.lblHomeGuildMasterRaidParticipantsTitle.Size = new System.Drawing.Size(90, 17);
-            this.lblHomeGuildMasterRaidParticipantsTitle.TabIndex = 9;
-            this.lblHomeGuildMasterRaidParticipantsTitle.Text = "Participants :";
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.playerName,
+            this.playerGrade,
+            this.playerDetails});
+            this.dataGridView1.Location = new System.Drawing.Point(6, 34);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(310, 501);
+            this.dataGridView1.TabIndex = 0;
             // 
-            // lblHomeGuildMasterRaidParticipantsNumber
+            // playerName
             // 
-            this.lblHomeGuildMasterRaidParticipantsNumber.AutoSize = true;
-            this.lblHomeGuildMasterRaidParticipantsNumber.Location = new System.Drawing.Point(785, 82);
-            this.lblHomeGuildMasterRaidParticipantsNumber.Name = "lblHomeGuildMasterRaidParticipantsNumber";
-            this.lblHomeGuildMasterRaidParticipantsNumber.Size = new System.Drawing.Size(0, 17);
-            this.lblHomeGuildMasterRaidParticipantsNumber.TabIndex = 10;
+            this.playerName.HeaderText = "Nom";
+            this.playerName.MinimumWidth = 6;
+            this.playerName.Name = "playerName";
             // 
-            // Roster
+            // playerGrade
             // 
-            this.Roster.HeaderText = "Roster";
-            this.Roster.MinimumWidth = 6;
-            this.Roster.Name = "Roster";
-            this.Roster.Width = 125;
+            this.playerGrade.HeaderText = "Grade";
+            this.playerGrade.MinimumWidth = 6;
+            this.playerGrade.Name = "playerGrade";
             // 
-            // Nom
+            // playerDetails
             // 
-            this.Nom.HeaderText = "Nom";
-            this.Nom.MinimumWidth = 6;
-            this.Nom.Name = "Nom";
-            this.Nom.Width = 125;
+            this.playerDetails.HeaderText = "Détails";
+            this.playerDetails.MinimumWidth = 6;
+            this.playerDetails.Name = "playerDetails";
+            this.playerDetails.Width = 50;
             // 
-            // Classe
+            // gbHomeGuildMasterGuildDemands
             // 
-            this.Classe.HeaderText = "Classe";
-            this.Classe.MinimumWidth = 6;
-            this.Classe.Name = "Classe";
-            this.Classe.Width = 125;
-            // 
-            // Rôle
-            // 
-            this.Rôle.HeaderText = "Rôle";
-            this.Rôle.MinimumWidth = 6;
-            this.Rôle.Name = "Rôle";
-            this.Rôle.Width = 50;
-            // 
-            // Status
-            // 
-            this.Status.HeaderText = "Status";
-            this.Status.MinimumWidth = 6;
-            this.Status.Name = "Status";
-            this.Status.Width = 50;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(581, 80);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 17);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Invités : ";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(581, 114);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 17);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "En attente :";
-            // 
-            // fd
-            // 
-            this.fd.AutoSize = true;
-            this.fd.Location = new System.Drawing.Point(581, 150);
-            this.fd.Name = "fd";
-            this.fd.Size = new System.Drawing.Size(45, 17);
-            this.fd.TabIndex = 13;
-            this.fd.Text = "TANK";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(655, 150);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 17);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "HEAL";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(727, 150);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(36, 17);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "DPS";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(584, 171);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(28, 17);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "0/2";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(655, 171);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(28, 17);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "0/4";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(727, 171);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(36, 17);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "0/14";
+            this.gbHomeGuildMasterGuildDemands.Location = new System.Drawing.Point(362, 7);
+            this.gbHomeGuildMasterGuildDemands.Name = "gbHomeGuildMasterGuildDemands";
+            this.gbHomeGuildMasterGuildDemands.Size = new System.Drawing.Size(369, 600);
+            this.gbHomeGuildMasterGuildDemands.TabIndex = 1;
+            this.gbHomeGuildMasterGuildDemands.TabStop = false;
+            this.gbHomeGuildMasterGuildDemands.Text = "Demandes de recrutement";
             // 
             // frmHomeGuildMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1189, 646);
+            this.ClientSize = new System.Drawing.Size(764, 646);
             this.Controls.Add(this.tcHomeGuildInfomations);
             this.Name = "frmHomeGuildMaster";
             this.Text = "Tableau de bord du Maître de guilde";
             this.tcHomeGuildInfomations.ResumeLayout(false);
+            this.tpHomeGuildMembers.ResumeLayout(false);
             this.tpHomeGuildRaid.ResumeLayout(false);
             this.tpHomeGuildRaid.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRaidList)).EndInit();
+            this.gbHomeGuildMasterGuildMembersList.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -371,29 +263,19 @@
         private System.Windows.Forms.TabPage tpHomeGuildEvents;
         private System.Windows.Forms.TabPage tpHomeGuildRaid;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvRaidList;
         private System.Windows.Forms.Label lblHomeRaidList;
         private System.Windows.Forms.Label lblHomeRaidDateSelection;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Label lblHomeGuildMasterRaidInvitations;
         private System.Windows.Forms.TabPage tpRoster;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label fd;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblHomeGuildMasterRaidParticipantsNumber;
-        private System.Windows.Forms.Label lblHomeGuildMasterRaidParticipantsTitle;
-        private System.Windows.Forms.Label lblHomeGuildMasterRaidDate;
-        private System.Windows.Forms.Label lblHomeGuildMasterRaidDateTitle;
-        private System.Windows.Forms.Label lblHomeGuildMasterRaidDetails;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Roster;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nom;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Classe;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Rôle;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.GroupBox gbHomeGuildMasterGuildMembersList;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn raidName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn raidinvites;
+        private System.Windows.Forms.DataGridViewTextBoxColumn raidRoster;
+        private System.Windows.Forms.DataGridViewButtonColumn raidParticipants;
+        private System.Windows.Forms.DataGridViewTextBoxColumn playerName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn playerGrade;
+        private System.Windows.Forms.DataGridViewButtonColumn playerDetails;
+        private System.Windows.Forms.GroupBox gbHomeGuildMasterGuildDemands;
     }
 }

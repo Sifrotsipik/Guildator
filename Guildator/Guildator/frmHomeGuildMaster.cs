@@ -21,5 +21,15 @@ namespace Guildator
         {
 
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void gbHomeGuildMasterGuildMembersList_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
