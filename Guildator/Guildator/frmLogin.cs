@@ -16,5 +16,12 @@ namespace Guildator
         {
             InitializeComponent();
         }
+
+        private void lblkLoginRegistration_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmRegistration frmRegistration = new frmRegistration();
+            frmRegistration.Show();
+            this.Hide();
+        }
     }
 }

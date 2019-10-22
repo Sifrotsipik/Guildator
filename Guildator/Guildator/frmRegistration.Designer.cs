@@ -28,19 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblRegistrationAccountInformations = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegistration));
             this.lblRegistrationEmail = new System.Windows.Forms.Label();
             this.lblRegistrationPassword = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.lblRegistrationCharacterTitle = new System.Windows.Forms.Label();
             this.lblRegistrationFaction = new System.Windows.Forms.Label();
             this.rbRegistrationAlliance = new System.Windows.Forms.RadioButton();
             this.rbRegistrationHorde = new System.Windows.Forms.RadioButton();
             this.lblRegistrationRace = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lbRegistrationRace = new System.Windows.Forms.ListBox();
             this.lblRegistrationClass = new System.Windows.Forms.Label();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.lbRegistrationClass = new System.Windows.Forms.ListBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.lblRegistrationCharacterName = new System.Windows.Forms.Label();
             this.btnRegistrationNext = new System.Windows.Forms.Button();
@@ -50,74 +49,66 @@
             this.cbRegistrationDps = new System.Windows.Forms.CheckBox();
             this.cbRegistrationHeal = new System.Windows.Forms.CheckBox();
             this.btnRegistrationBack = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.gbRegistrationAccountInformations = new System.Windows.Forms.GroupBox();
+            this.gbRegistrationPlayerInformations = new System.Windows.Forms.GroupBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.gbRegistrationAccountInformations.SuspendLayout();
+            this.gbRegistrationPlayerInformations.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lblRegistrationAccountInformations
-            // 
-            this.lblRegistrationAccountInformations.AutoSize = true;
-            this.lblRegistrationAccountInformations.Location = new System.Drawing.Point(87, 28);
-            this.lblRegistrationAccountInformations.Name = "lblRegistrationAccountInformations";
-            this.lblRegistrationAccountInformations.Size = new System.Drawing.Size(217, 17);
-            this.lblRegistrationAccountInformations.TabIndex = 0;
-            this.lblRegistrationAccountInformations.Text = "Informations du compte Guildator";
             // 
             // lblRegistrationEmail
             // 
             this.lblRegistrationEmail.AutoSize = true;
-            this.lblRegistrationEmail.Location = new System.Drawing.Point(52, 68);
+            this.lblRegistrationEmail.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegistrationEmail.Location = new System.Drawing.Point(42, 59);
             this.lblRegistrationEmail.Name = "lblRegistrationEmail";
-            this.lblRegistrationEmail.Size = new System.Drawing.Size(97, 17);
+            this.lblRegistrationEmail.Size = new System.Drawing.Size(135, 26);
             this.lblRegistrationEmail.TabIndex = 1;
             this.lblRegistrationEmail.Text = "Adresse mail :";
             // 
             // lblRegistrationPassword
             // 
             this.lblRegistrationPassword.AutoSize = true;
-            this.lblRegistrationPassword.Location = new System.Drawing.Point(52, 133);
+            this.lblRegistrationPassword.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegistrationPassword.Location = new System.Drawing.Point(42, 133);
             this.lblRegistrationPassword.Name = "lblRegistrationPassword";
-            this.lblRegistrationPassword.Size = new System.Drawing.Size(101, 17);
+            this.lblRegistrationPassword.Size = new System.Drawing.Size(140, 26);
             this.lblRegistrationPassword.TabIndex = 2;
             this.lblRegistrationPassword.Text = "Mot de passe :";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(190, 68);
+            this.textBox1.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(197, 59);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(136, 22);
+            this.textBox1.Size = new System.Drawing.Size(200, 33);
             this.textBox1.TabIndex = 3;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(190, 133);
+            this.textBox2.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(197, 133);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(136, 22);
+            this.textBox2.Size = new System.Drawing.Size(200, 33);
             this.textBox2.TabIndex = 4;
-            // 
-            // lblRegistrationCharacterTitle
-            // 
-            this.lblRegistrationCharacterTitle.AutoSize = true;
-            this.lblRegistrationCharacterTitle.Location = new System.Drawing.Point(87, 192);
-            this.lblRegistrationCharacterTitle.Name = "lblRegistrationCharacterTitle";
-            this.lblRegistrationCharacterTitle.Size = new System.Drawing.Size(185, 17);
-            this.lblRegistrationCharacterTitle.TabIndex = 5;
-            this.lblRegistrationCharacterTitle.Text = "Informations du personnage";
             // 
             // lblRegistrationFaction
             // 
             this.lblRegistrationFaction.AutoSize = true;
-            this.lblRegistrationFaction.Location = new System.Drawing.Point(52, 295);
+            this.lblRegistrationFaction.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegistrationFaction.Location = new System.Drawing.Point(42, 134);
             this.lblRegistrationFaction.Name = "lblRegistrationFaction";
-            this.lblRegistrationFaction.Size = new System.Drawing.Size(62, 17);
+            this.lblRegistrationFaction.Size = new System.Drawing.Size(88, 26);
             this.lblRegistrationFaction.TabIndex = 6;
             this.lblRegistrationFaction.Text = "Faction :";
             // 
             // rbRegistrationAlliance
             // 
             this.rbRegistrationAlliance.AutoSize = true;
-            this.rbRegistrationAlliance.Location = new System.Drawing.Point(158, 295);
+            this.rbRegistrationAlliance.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbRegistrationAlliance.Location = new System.Drawing.Point(162, 134);
             this.rbRegistrationAlliance.Name = "rbRegistrationAlliance";
-            this.rbRegistrationAlliance.Size = new System.Drawing.Size(78, 21);
+            this.rbRegistrationAlliance.Size = new System.Drawing.Size(100, 30);
             this.rbRegistrationAlliance.TabIndex = 7;
             this.rbRegistrationAlliance.TabStop = true;
             this.rbRegistrationAlliance.Text = "Alliance";
@@ -126,9 +117,10 @@
             // rbRegistrationHorde
             // 
             this.rbRegistrationHorde.AutoSize = true;
-            this.rbRegistrationHorde.Location = new System.Drawing.Point(242, 295);
+            this.rbRegistrationHorde.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbRegistrationHorde.Location = new System.Drawing.Point(268, 134);
             this.rbRegistrationHorde.Name = "rbRegistrationHorde";
-            this.rbRegistrationHorde.Size = new System.Drawing.Size(68, 21);
+            this.rbRegistrationHorde.Size = new System.Drawing.Size(88, 30);
             this.rbRegistrationHorde.TabIndex = 8;
             this.rbRegistrationHorde.TabStop = true;
             this.rbRegistrationHorde.Text = "Horde";
@@ -137,41 +129,45 @@
             // lblRegistrationRace
             // 
             this.lblRegistrationRace.AutoSize = true;
-            this.lblRegistrationRace.Location = new System.Drawing.Point(52, 349);
+            this.lblRegistrationRace.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegistrationRace.Location = new System.Drawing.Point(42, 205);
             this.lblRegistrationRace.Name = "lblRegistrationRace";
-            this.lblRegistrationRace.Size = new System.Drawing.Size(49, 17);
+            this.lblRegistrationRace.Size = new System.Drawing.Size(66, 26);
             this.lblRegistrationRace.TabIndex = 9;
             this.lblRegistrationRace.Text = "Race :";
             // 
-            // listBox1
+            // lbRegistrationRace
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Items.AddRange(new object[] {
+            this.lbRegistrationRace.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRegistrationRace.FormattingEnabled = true;
+            this.lbRegistrationRace.ItemHeight = 24;
+            this.lbRegistrationRace.Items.AddRange(new object[] {
             "Sélectionnez une race",
             "Elfe de la nuit",
             "Gnome",
             "Humain",
             "Nain"});
-            this.listBox1.Location = new System.Drawing.Point(158, 349);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(175, 20);
-            this.listBox1.TabIndex = 10;
+            this.lbRegistrationRace.Location = new System.Drawing.Point(162, 205);
+            this.lbRegistrationRace.Name = "lbRegistrationRace";
+            this.lbRegistrationRace.Size = new System.Drawing.Size(224, 28);
+            this.lbRegistrationRace.TabIndex = 10;
             // 
             // lblRegistrationClass
             // 
             this.lblRegistrationClass.AutoSize = true;
-            this.lblRegistrationClass.Location = new System.Drawing.Point(52, 403);
+            this.lblRegistrationClass.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegistrationClass.Location = new System.Drawing.Point(42, 274);
             this.lblRegistrationClass.Name = "lblRegistrationClass";
-            this.lblRegistrationClass.Size = new System.Drawing.Size(62, 17);
+            this.lblRegistrationClass.Size = new System.Drawing.Size(84, 26);
             this.lblRegistrationClass.TabIndex = 11;
             this.lblRegistrationClass.Text = "Classe : ";
             // 
-            // listBox2
+            // lbRegistrationClass
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 16;
-            this.listBox2.Items.AddRange(new object[] {
+            this.lbRegistrationClass.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRegistrationClass.FormattingEnabled = true;
+            this.lbRegistrationClass.ItemHeight = 24;
+            this.lbRegistrationClass.Items.AddRange(new object[] {
             "Sélectionnez une classe",
             "Chasseur",
             "Voleur",
@@ -182,32 +178,35 @@
             "Druide",
             "Mage",
             "Prêtre"});
-            this.listBox2.Location = new System.Drawing.Point(158, 403);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(175, 20);
-            this.listBox2.TabIndex = 12;
+            this.lbRegistrationClass.Location = new System.Drawing.Point(162, 274);
+            this.lbRegistrationClass.Name = "lbRegistrationClass";
+            this.lbRegistrationClass.Size = new System.Drawing.Size(224, 28);
+            this.lbRegistrationClass.TabIndex = 12;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(158, 241);
+            this.textBox3.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(197, 67);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(136, 22);
+            this.textBox3.Size = new System.Drawing.Size(200, 33);
             this.textBox3.TabIndex = 13;
             // 
             // lblRegistrationCharacterName
             // 
             this.lblRegistrationCharacterName.AutoSize = true;
-            this.lblRegistrationCharacterName.Location = new System.Drawing.Point(52, 241);
+            this.lblRegistrationCharacterName.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegistrationCharacterName.Location = new System.Drawing.Point(42, 70);
             this.lblRegistrationCharacterName.Name = "lblRegistrationCharacterName";
-            this.lblRegistrationCharacterName.Size = new System.Drawing.Size(45, 17);
+            this.lblRegistrationCharacterName.Size = new System.Drawing.Size(64, 26);
             this.lblRegistrationCharacterName.TabIndex = 14;
             this.lblRegistrationCharacterName.Text = "Nom :";
             // 
             // btnRegistrationNext
             // 
-            this.btnRegistrationNext.Location = new System.Drawing.Point(242, 593);
+            this.btnRegistrationNext.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrationNext.Location = new System.Drawing.Point(370, 721);
             this.btnRegistrationNext.Name = "btnRegistrationNext";
-            this.btnRegistrationNext.Size = new System.Drawing.Size(84, 27);
+            this.btnRegistrationNext.Size = new System.Drawing.Size(120, 33);
             this.btnRegistrationNext.TabIndex = 15;
             this.btnRegistrationNext.Text = "Suivant";
             this.btnRegistrationNext.UseVisualStyleBackColor = true;
@@ -215,28 +214,32 @@
             // lblkRegistrationConnexion
             // 
             this.lblkRegistrationConnexion.AutoSize = true;
-            this.lblkRegistrationConnexion.Location = new System.Drawing.Point(41, 645);
+            this.lblkRegistrationConnexion.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblkRegistrationConnexion.Location = new System.Drawing.Point(52, 777);
             this.lblkRegistrationConnexion.Name = "lblkRegistrationConnexion";
-            this.lblkRegistrationConnexion.Size = new System.Drawing.Size(320, 17);
+            this.lblkRegistrationConnexion.Size = new System.Drawing.Size(438, 26);
             this.lblkRegistrationConnexion.TabIndex = 16;
             this.lblkRegistrationConnexion.TabStop = true;
             this.lblkRegistrationConnexion.Text = "Déjà un compte ? Cliquez ici pour vous connecter";
+            this.lblkRegistrationConnexion.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblkRegistrationConnexion_LinkClicked);
             // 
             // lblRegistrationRole
             // 
             this.lblRegistrationRole.AutoSize = true;
-            this.lblRegistrationRole.Location = new System.Drawing.Point(52, 465);
+            this.lblRegistrationRole.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegistrationRole.Location = new System.Drawing.Point(42, 336);
             this.lblRegistrationRole.Name = "lblRegistrationRole";
-            this.lblRegistrationRole.Size = new System.Drawing.Size(45, 17);
+            this.lblRegistrationRole.Size = new System.Drawing.Size(61, 26);
             this.lblRegistrationRole.TabIndex = 17;
             this.lblRegistrationRole.Text = "Rôle :";
             // 
             // cbRegistrationTank
             // 
             this.cbRegistrationTank.AutoSize = true;
-            this.cbRegistrationTank.Location = new System.Drawing.Point(158, 465);
+            this.cbRegistrationTank.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbRegistrationTank.Location = new System.Drawing.Point(141, 336);
             this.cbRegistrationTank.Name = "cbRegistrationTank";
-            this.cbRegistrationTank.Size = new System.Drawing.Size(67, 21);
+            this.cbRegistrationTank.Size = new System.Drawing.Size(80, 28);
             this.cbRegistrationTank.TabIndex = 18;
             this.cbRegistrationTank.Text = "TANK";
             this.cbRegistrationTank.UseVisualStyleBackColor = true;
@@ -244,9 +247,10 @@
             // cbRegistrationDps
             // 
             this.cbRegistrationDps.AutoSize = true;
-            this.cbRegistrationDps.Location = new System.Drawing.Point(300, 465);
+            this.cbRegistrationDps.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbRegistrationDps.Location = new System.Drawing.Point(310, 334);
             this.cbRegistrationDps.Name = "cbRegistrationDps";
-            this.cbRegistrationDps.Size = new System.Drawing.Size(58, 21);
+            this.cbRegistrationDps.Size = new System.Drawing.Size(65, 28);
             this.cbRegistrationDps.TabIndex = 19;
             this.cbRegistrationDps.Text = "DPS";
             this.cbRegistrationDps.UseVisualStyleBackColor = true;
@@ -254,81 +258,109 @@
             // cbRegistrationHeal
             // 
             this.cbRegistrationHeal.AutoSize = true;
-            this.cbRegistrationHeal.Location = new System.Drawing.Point(228, 465);
+            this.cbRegistrationHeal.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbRegistrationHeal.Location = new System.Drawing.Point(227, 336);
             this.cbRegistrationHeal.Name = "cbRegistrationHeal";
-            this.cbRegistrationHeal.Size = new System.Drawing.Size(66, 21);
+            this.cbRegistrationHeal.Size = new System.Drawing.Size(77, 28);
             this.cbRegistrationHeal.TabIndex = 20;
             this.cbRegistrationHeal.Text = "HEAL";
             this.cbRegistrationHeal.UseVisualStyleBackColor = true;
             // 
             // btnRegistrationBack
             // 
-            this.btnRegistrationBack.Location = new System.Drawing.Point(90, 593);
+            this.btnRegistrationBack.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrationBack.Location = new System.Drawing.Point(45, 721);
             this.btnRegistrationBack.Name = "btnRegistrationBack";
-            this.btnRegistrationBack.Size = new System.Drawing.Size(82, 27);
+            this.btnRegistrationBack.Size = new System.Drawing.Size(120, 33);
             this.btnRegistrationBack.TabIndex = 21;
             this.btnRegistrationBack.Text = "Retour";
             this.btnRegistrationBack.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // gbRegistrationAccountInformations
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(55, 532);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "label1";
+            this.gbRegistrationAccountInformations.Controls.Add(this.lblRegistrationEmail);
+            this.gbRegistrationAccountInformations.Controls.Add(this.lblRegistrationPassword);
+            this.gbRegistrationAccountInformations.Controls.Add(this.textBox1);
+            this.gbRegistrationAccountInformations.Controls.Add(this.textBox2);
+            this.gbRegistrationAccountInformations.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbRegistrationAccountInformations.Location = new System.Drawing.Point(35, 35);
+            this.gbRegistrationAccountInformations.Name = "gbRegistrationAccountInformations";
+            this.gbRegistrationAccountInformations.Size = new System.Drawing.Size(467, 213);
+            this.gbRegistrationAccountInformations.TabIndex = 23;
+            this.gbRegistrationAccountInformations.TabStop = false;
+            this.gbRegistrationAccountInformations.Text = "Informations du compte";
+            // 
+            // gbRegistrationPlayerInformations
+            // 
+            this.gbRegistrationPlayerInformations.Controls.Add(this.checkBox1);
+            this.gbRegistrationPlayerInformations.Controls.Add(this.lblRegistrationCharacterName);
+            this.gbRegistrationPlayerInformations.Controls.Add(this.textBox3);
+            this.gbRegistrationPlayerInformations.Controls.Add(this.lblRegistrationFaction);
+            this.gbRegistrationPlayerInformations.Controls.Add(this.rbRegistrationAlliance);
+            this.gbRegistrationPlayerInformations.Controls.Add(this.cbRegistrationDps);
+            this.gbRegistrationPlayerInformations.Controls.Add(this.cbRegistrationHeal);
+            this.gbRegistrationPlayerInformations.Controls.Add(this.rbRegistrationHorde);
+            this.gbRegistrationPlayerInformations.Controls.Add(this.lblRegistrationRace);
+            this.gbRegistrationPlayerInformations.Controls.Add(this.cbRegistrationTank);
+            this.gbRegistrationPlayerInformations.Controls.Add(this.lbRegistrationRace);
+            this.gbRegistrationPlayerInformations.Controls.Add(this.lblRegistrationRole);
+            this.gbRegistrationPlayerInformations.Controls.Add(this.lblRegistrationClass);
+            this.gbRegistrationPlayerInformations.Controls.Add(this.lbRegistrationClass);
+            this.gbRegistrationPlayerInformations.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbRegistrationPlayerInformations.Location = new System.Drawing.Point(35, 263);
+            this.gbRegistrationPlayerInformations.Name = "gbRegistrationPlayerInformations";
+            this.gbRegistrationPlayerInformations.Size = new System.Drawing.Size(467, 440);
+            this.gbRegistrationPlayerInformations.TabIndex = 24;
+            this.gbRegistrationPlayerInformations.TabStop = false;
+            this.gbRegistrationPlayerInformations.Text = "Informations du personnage";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBox1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(63, 389);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(293, 32);
+            this.checkBox1.TabIndex = 23;
+            this.checkBox1.Text = "Je suis Maître d\'une guilde ";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // frmRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(416, 700);
-            this.Controls.Add(this.label1);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(568, 841);
+            this.Controls.Add(this.gbRegistrationPlayerInformations);
+            this.Controls.Add(this.gbRegistrationAccountInformations);
             this.Controls.Add(this.btnRegistrationBack);
-            this.Controls.Add(this.cbRegistrationHeal);
-            this.Controls.Add(this.cbRegistrationDps);
-            this.Controls.Add(this.cbRegistrationTank);
-            this.Controls.Add(this.lblRegistrationRole);
             this.Controls.Add(this.lblkRegistrationConnexion);
             this.Controls.Add(this.btnRegistrationNext);
-            this.Controls.Add(this.lblRegistrationCharacterName);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.lblRegistrationClass);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.lblRegistrationRace);
-            this.Controls.Add(this.rbRegistrationHorde);
-            this.Controls.Add(this.rbRegistrationAlliance);
-            this.Controls.Add(this.lblRegistrationFaction);
-            this.Controls.Add(this.lblRegistrationCharacterTitle);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.lblRegistrationPassword);
-            this.Controls.Add(this.lblRegistrationEmail);
-            this.Controls.Add(this.lblRegistrationAccountInformations);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmRegistration";
             this.Text = "Page d\'inscription";
+            this.gbRegistrationAccountInformations.ResumeLayout(false);
+            this.gbRegistrationAccountInformations.PerformLayout();
+            this.gbRegistrationPlayerInformations.ResumeLayout(false);
+            this.gbRegistrationPlayerInformations.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblRegistrationAccountInformations;
         private System.Windows.Forms.Label lblRegistrationEmail;
         private System.Windows.Forms.Label lblRegistrationPassword;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label lblRegistrationCharacterTitle;
         private System.Windows.Forms.Label lblRegistrationFaction;
         private System.Windows.Forms.RadioButton rbRegistrationAlliance;
         private System.Windows.Forms.RadioButton rbRegistrationHorde;
         private System.Windows.Forms.Label lblRegistrationRace;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lbRegistrationRace;
         private System.Windows.Forms.Label lblRegistrationClass;
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox lbRegistrationClass;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label lblRegistrationCharacterName;
         private System.Windows.Forms.Button btnRegistrationNext;
@@ -338,6 +370,8 @@
         private System.Windows.Forms.CheckBox cbRegistrationDps;
         private System.Windows.Forms.CheckBox cbRegistrationHeal;
         private System.Windows.Forms.Button btnRegistrationBack;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox gbRegistrationAccountInformations;
+        private System.Windows.Forms.GroupBox gbRegistrationPlayerInformations;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
