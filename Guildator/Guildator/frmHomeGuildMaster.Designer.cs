@@ -45,7 +45,6 @@
             this.playerGrade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.playerDetails = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tcHomeGuildMasterInfomations = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.gbHomeGuildMasterRaidList = new System.Windows.Forms.GroupBox();
             this.gbHomeGuildMasterRosterList = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
@@ -56,6 +55,7 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tpHomeGuildRaid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRaidList)).BeginInit();
             this.tpHomeGuildMembers.SuspendLayout();
@@ -66,6 +66,7 @@
             this.gbHomeGuildMasterRosterList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tpComposants
@@ -73,7 +74,7 @@
             this.tpComposants.Location = new System.Drawing.Point(4, 40);
             this.tpComposants.Name = "tpComposants";
             this.tpComposants.Padding = new System.Windows.Forms.Padding(3);
-            this.tpComposants.Size = new System.Drawing.Size(1160, 703);
+            this.tpComposants.Size = new System.Drawing.Size(1160, 697);
             this.tpComposants.TabIndex = 4;
             this.tpComposants.Text = "Composants";
             this.tpComposants.UseVisualStyleBackColor = true;
@@ -159,7 +160,7 @@
             this.tpHomeGuildMembers.Location = new System.Drawing.Point(4, 40);
             this.tpHomeGuildMembers.Name = "tpHomeGuildMembers";
             this.tpHomeGuildMembers.Padding = new System.Windows.Forms.Padding(3);
-            this.tpHomeGuildMembers.Size = new System.Drawing.Size(1160, 655);
+            this.tpHomeGuildMembers.Size = new System.Drawing.Size(1160, 697);
             this.tpHomeGuildMembers.TabIndex = 0;
             this.tpHomeGuildMembers.Text = "Membres";
             this.tpHomeGuildMembers.UseVisualStyleBackColor = true;
@@ -225,23 +226,12 @@
             this.tcHomeGuildMasterInfomations.Controls.Add(this.tpHomeGuildMembers);
             this.tcHomeGuildMasterInfomations.Controls.Add(this.tpHomeGuildRaid);
             this.tcHomeGuildMasterInfomations.Controls.Add(this.tpComposants);
-            this.tcHomeGuildMasterInfomations.Controls.Add(this.tabPage1);
             this.tcHomeGuildMasterInfomations.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tcHomeGuildMasterInfomations.Location = new System.Drawing.Point(12, 18);
             this.tcHomeGuildMasterInfomations.Name = "tcHomeGuildMasterInfomations";
             this.tcHomeGuildMasterInfomations.SelectedIndex = 0;
             this.tcHomeGuildMasterInfomations.Size = new System.Drawing.Size(1168, 741);
             this.tcHomeGuildMasterInfomations.TabIndex = 0;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 40);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1160, 703);
-            this.tabPage1.TabIndex = 5;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // gbHomeGuildMasterRaidList
             // 
@@ -257,7 +247,7 @@
             // 
             // gbHomeGuildMasterRosterList
             // 
-            this.gbHomeGuildMasterRosterList.Controls.Add(this.btnHomeGuildMasterAddRoster);
+            this.gbHomeGuildMasterRosterList.Controls.Add(this.groupBox2);
             this.gbHomeGuildMasterRosterList.Controls.Add(this.dataGridView2);
             this.gbHomeGuildMasterRosterList.Location = new System.Drawing.Point(597, 6);
             this.gbHomeGuildMasterRosterList.Name = "gbHomeGuildMasterRosterList";
@@ -279,11 +269,11 @@
             // btnHomeGuildMasterAddRoster
             // 
             this.btnHomeGuildMasterAddRoster.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHomeGuildMasterAddRoster.Location = new System.Drawing.Point(333, 611);
+            this.btnHomeGuildMasterAddRoster.Location = new System.Drawing.Point(425, 329);
             this.btnHomeGuildMasterAddRoster.Name = "btnHomeGuildMasterAddRoster";
-            this.btnHomeGuildMasterAddRoster.Size = new System.Drawing.Size(178, 35);
+            this.btnHomeGuildMasterAddRoster.Size = new System.Drawing.Size(99, 37);
             this.btnHomeGuildMasterAddRoster.TabIndex = 1;
-            this.btnHomeGuildMasterAddRoster.Text = "Ajouter un roster";
+            this.btnHomeGuildMasterAddRoster.Text = "Ajouter";
             this.btnHomeGuildMasterAddRoster.UseVisualStyleBackColor = true;
             // 
             // btnHomeGuildMasterAddRaid
@@ -348,10 +338,20 @@
             "Onyxia",
             "Coeur du Magma",
             "Repaire de l\'Aile Noire"});
-            this.listBox1.Location = new System.Drawing.Point(60, 48);
+            this.listBox1.Location = new System.Drawing.Point(18, 49);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(197, 28);
             this.listBox1.TabIndex = 3;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnHomeGuildMasterAddRoster);
+            this.groupBox2.Location = new System.Drawing.Point(6, 292);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(530, 372);
+            this.groupBox2.TabIndex = 2;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Composer un Roster";
             // 
             // frmHomeGuildMaster
             // 
@@ -376,6 +376,7 @@
             this.gbHomeGuildMasterRosterList.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -402,7 +403,6 @@
         private System.Windows.Forms.DataGridViewButtonColumn playerDetails;
         private System.Windows.Forms.GroupBox gbHomeGuildMasterRosterList;
         private System.Windows.Forms.GroupBox gbHomeGuildMasterRaidList;
-        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Button btnHomeGuildMasterAddRoster;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -411,5 +411,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }
