@@ -31,5 +31,15 @@ namespace Guildator
         {
 
         }
+
+        private void lblHomeGuildMasterRoster_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmHomeGuildMaster_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

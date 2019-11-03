@@ -1,6 +1,6 @@
 ﻿namespace Guildator
 {
-    partial class frmGuildCreation
+    partial class frmAddRoster
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // frmGuildCreation
+            // frmAddRoster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 609);
-            this.Name = "frmGuildCreation";
-            this.Text = "frmGuildCreation";
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1021, 648);
+            this.Name = "frmAddRoster";
+            this.Text = "frmAddRoster";
             this.ResumeLayout(false);
 
         }

@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmGuildCreation.cs">
+    <Compile Include="frmAddRaid.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmGuildCreation.Designer.cs">
-      <DependentUpon>frmGuildCreation.cs</DependentUpon>
+    <Compile Include="frmAddRaid.Designer.cs">
+      <DependentUpon>frmAddRaid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddRoster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddRoster.Designer.cs">
+      <DependentUpon>frmAddRoster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddGuild.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddGuild.Designer.cs">
+      <DependentUpon>frmAddGuild.cs</DependentUpon>
     </Compile>
     <Compile Include="frmGuildSearch.cs">
       <SubType>Form</SubType>
@@ -88,10 +100,22 @@
     <Compile Include="frmRegistration.Designer.cs">
       <DependentUpon>frmRegistration.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRosterDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRosterDetails.Designer.cs">
+      <DependentUpon>frmRosterDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmGuildCreation.resx">
-      <DependentUpon>frmGuildCreation.cs</DependentUpon>
+    <EmbeddedResource Include="frmAddRaid.resx">
+      <DependentUpon>frmAddRaid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddGuild.resx">
+      <DependentUpon>frmAddGuild.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddRoster.resx">
+      <DependentUpon>frmAddRoster.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGuildSearch.resx">
       <DependentUpon>frmGuildSearch.cs</DependentUpon>

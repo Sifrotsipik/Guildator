@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Guildator
 {
-    public partial class frmGuildCreation : Form
+    public partial class frmRosterDetails : Form
     {
-        public frmGuildCreation()
+        public frmRosterDetails()
         {
             InitializeComponent();
         }
