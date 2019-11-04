@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Guildator
 {
-    public partial class frmAddRoster : Form
+    public partial class frmProfilPlayer : Form
     {
-        public frmAddRoster()
+        public frmProfilPlayer()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -58,6 +58,7 @@
             this.btnLoginConnexion.TabIndex = 1;
             this.btnLoginConnexion.Text = "Connexion";
             this.btnLoginConnexion.UseVisualStyleBackColor = true;
+            this.btnLoginConnexion.Click += new System.EventHandler(this.btnLoginConnexion_Click);
             // 
             // lblkLoginRegistration
             // 

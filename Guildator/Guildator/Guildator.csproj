@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAddComponentDemand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddComponentDemand.Designer.cs">
+      <DependentUpon>frmAddComponentDemand.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAddRaid.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,24 @@
     <Compile Include="frmHomePlayer.Designer.cs">
       <DependentUpon>frmHomePlayer.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmNotifications.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNotifications.Designer.cs">
+      <DependentUpon>frmNotifications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProfilGuildMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProfilGuildMaster.Designer.cs">
+      <DependentUpon>frmProfilGuildMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProfilPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProfilPlayer.Designer.cs">
+      <DependentUpon>frmProfilPlayer.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRaidDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +132,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAddComponentDemand.resx">
+      <DependentUpon>frmAddComponentDemand.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAddRaid.resx">
       <DependentUpon>frmAddRaid.cs</DependentUpon>
     </EmbeddedResource>
@@ -125,6 +152,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNotifications.resx">
+      <DependentUpon>frmNotifications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProfilGuildMaster.resx">
+      <DependentUpon>frmProfilGuildMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProfilPlayer.resx">
+      <DependentUpon>frmProfilPlayer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRaidDetails.resx">
       <DependentUpon>frmRaidDetails.cs</DependentUpon>
