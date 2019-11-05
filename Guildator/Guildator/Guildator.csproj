@@ -52,6 +52,12 @@
     <Compile Include="frmAddComponentDemand.Designer.cs">
       <DependentUpon>frmAddComponentDemand.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAddOrSearchGuild.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddOrSearchGuild.Designer.cs">
+      <DependentUpon>frmAddOrSearchGuild.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAddRaid.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,12 @@
     <Compile Include="frmGuildSearch.Designer.cs">
       <DependentUpon>frmGuildSearch.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmGuildWaiting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGuildWaiting.Designer.cs">
+      <DependentUpon>frmGuildWaiting.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmHomeGuildMaster.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +111,12 @@
     </Compile>
     <Compile Include="frmNotifications.Designer.cs">
       <DependentUpon>frmNotifications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPlayerDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlayerDetails.Designer.cs">
+      <DependentUpon>frmPlayerDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="frmProfilGuildMaster.cs">
       <SubType>Form</SubType>
@@ -135,6 +153,9 @@
     <EmbeddedResource Include="frmAddComponentDemand.resx">
       <DependentUpon>frmAddComponentDemand.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAddOrSearchGuild.resx">
+      <DependentUpon>frmAddOrSearchGuild.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAddRaid.resx">
       <DependentUpon>frmAddRaid.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,14 +168,23 @@
     <EmbeddedResource Include="frmGuildSearch.resx">
       <DependentUpon>frmGuildSearch.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmGuildWaiting.resx">
+      <DependentUpon>frmGuildWaiting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmHomeGuildMaster.resx">
       <DependentUpon>frmHomeGuildMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHomePlayer.resx">
+      <DependentUpon>frmHomePlayer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNotifications.resx">
       <DependentUpon>frmNotifications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPlayerDetails.resx">
+      <DependentUpon>frmPlayerDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmProfilGuildMaster.resx">
       <DependentUpon>frmProfilGuildMaster.cs</DependentUpon>

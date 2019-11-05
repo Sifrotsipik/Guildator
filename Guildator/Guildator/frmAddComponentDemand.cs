@@ -16,5 +16,30 @@ namespace Guildator
         {
             InitializeComponent();
         }
+
+        private void frmAddComponentDemand_Load(object sender, EventArgs e)
+        {
+            this.AcceptButton = btnAddComponentDemandSave;
+        }
+
+        private void btnAddComponentDemandSave_Click(object sender, EventArgs e)
+        {
+            if (lbAddComponentDemandeName.Text == "Sélectionnez un composant")
+            {
+                lblAddComponentDemandName.ForeColor = Color.Red;
+            }
+            else if (nudAddComponentDemandQuantity.Value <= 0)
+            {
+                lblAddComponentDemandQuantity.ForeColor = Color.Red;
+            }
+            else {
+                //Créer l'objet ComponentDemand
+            }
+        }
+
+        private void btnAddComponentDemandClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

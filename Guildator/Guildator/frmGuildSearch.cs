@@ -21,5 +21,23 @@ namespace Guildator
         {
 
         }
+
+        private void btnGuildSearchAction_Click(object sender, EventArgs e)
+        {
+            //Adapter la dgvGuildSearch
+        }
+
+        private void btnGuildSearchBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnGuildSearchSave_Click(object sender, EventArgs e)
+        {
+            //faire la demande pour rejoindre la guilde concernée
+            frmGuildWaiting frmGuildWaiting = new frmGuildWaiting();
+            frmGuildWaiting.Show();
+            this.Hide();
+        }
     }
 }

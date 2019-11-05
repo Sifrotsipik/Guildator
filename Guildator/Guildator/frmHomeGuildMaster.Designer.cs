@@ -31,7 +31,7 @@
             this.tpComposants = new System.Windows.Forms.TabPage();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnHomeGuildMasterComponentDemand = new System.Windows.Forms.Button();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.PlayerDemandComponent = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PlayerDemandQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,15 +46,15 @@
             this.lblHomeGuildMasterRoster = new System.Windows.Forms.Label();
             this.lblHomeGuildMasterRaids = new System.Windows.Forms.Label();
             this.gbHomeGuildMasterRosterList = new System.Windows.Forms.GroupBox();
+            this.dgvHomeGuildMasterRostersList = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewButtonColumn2 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnHomeGuildMasterAddRoster = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.rosterName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RosterNbMembres = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RosterDetails = new System.Windows.Forms.DataGridViewButtonColumn();
             this.gbHomeGuildMasterRaidList = new System.Windows.Forms.GroupBox();
             this.btnHomeGuildMasterAddRaid = new System.Windows.Forms.Button();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.dgvRaidList = new System.Windows.Forms.DataGridView();
+            this.mcHomeGuildMasterRaidCalendar = new System.Windows.Forms.MonthCalendar();
+            this.dgvHomeGuildMasterRaidList = new System.Windows.Forms.DataGridView();
             this.raidName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.raidinvites = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.raidRoster = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,7 +64,7 @@
             this.lblHomeGuildMasterRecruitmentTitle = new System.Windows.Forms.Label();
             this.lblHomeGuildMasterMembersTitle = new System.Windows.Forms.Label();
             this.gbHomeGuildMasterGuildRecruitmentList = new System.Windows.Forms.GroupBox();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dgvHomeGuildMasterRecruitmentList = new System.Windows.Forms.DataGridView();
             this.RecruitmentPlayerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RecruitmentPlayerRace = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RecruitmentPlayerClass = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,11 +72,11 @@
             this.RecruitmentAcceptation = new System.Windows.Forms.DataGridViewButtonColumn();
             this.RecruitmentRefuser = new System.Windows.Forms.DataGridViewButtonColumn();
             this.gbHomeGuildMasterGuildMembersList = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.playerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.playerGrade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GuildMemberRole = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.playerDetails = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dgvHomeGuildMasterMembersList = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewButtonColumn1 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tcHomeGuildMasterInfomations = new System.Windows.Forms.TabControl();
             this.label1 = new System.Windows.Forms.Label();
             this.lblHomeGuildMasterNotificationsTitle = new System.Windows.Forms.Label();
@@ -89,14 +89,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.tpHomeGuildRaid.SuspendLayout();
             this.gbHomeGuildMasterRosterList.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHomeGuildMasterRostersList)).BeginInit();
             this.gbHomeGuildMasterRaidList.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRaidList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHomeGuildMasterRaidList)).BeginInit();
             this.tpHomeGuildMembers.SuspendLayout();
             this.gbHomeGuildMasterGuildRecruitmentList.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHomeGuildMasterRecruitmentList)).BeginInit();
             this.gbHomeGuildMasterGuildMembersList.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHomeGuildMasterMembersList)).BeginInit();
             this.tcHomeGuildMasterInfomations.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -125,7 +125,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.btnHomeGuildMasterComponentDemand);
             this.groupBox2.Controls.Add(this.dataGridView5);
             this.groupBox2.Location = new System.Drawing.Point(615, 90);
             this.groupBox2.Name = "groupBox2";
@@ -134,16 +134,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Mes demandes";
             // 
-            // button1
+            // btnHomeGuildMasterComponentDemand
             // 
-            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(264, 543);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(217, 41);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Demander un composant";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnHomeGuildMasterComponentDemand.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHomeGuildMasterComponentDemand.Location = new System.Drawing.Point(264, 543);
+            this.btnHomeGuildMasterComponentDemand.Name = "btnHomeGuildMasterComponentDemand";
+            this.btnHomeGuildMasterComponentDemand.Size = new System.Drawing.Size(217, 41);
+            this.btnHomeGuildMasterComponentDemand.TabIndex = 1;
+            this.btnHomeGuildMasterComponentDemand.Text = "Demander un composant";
+            this.btnHomeGuildMasterComponentDemand.UseVisualStyleBackColor = true;
+            this.btnHomeGuildMasterComponentDemand.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView5
             // 
@@ -275,14 +275,51 @@
             // 
             // gbHomeGuildMasterRosterList
             // 
+            this.gbHomeGuildMasterRosterList.Controls.Add(this.dgvHomeGuildMasterRostersList);
             this.gbHomeGuildMasterRosterList.Controls.Add(this.btnHomeGuildMasterAddRoster);
-            this.gbHomeGuildMasterRosterList.Controls.Add(this.dataGridView2);
             this.gbHomeGuildMasterRosterList.Location = new System.Drawing.Point(597, 68);
             this.gbHomeGuildMasterRosterList.Name = "gbHomeGuildMasterRosterList";
             this.gbHomeGuildMasterRosterList.Size = new System.Drawing.Size(542, 614);
             this.gbHomeGuildMasterRosterList.TabIndex = 5;
             this.gbHomeGuildMasterRosterList.TabStop = false;
             this.gbHomeGuildMasterRosterList.Text = "Liste des Rosters";
+            // 
+            // dgvHomeGuildMasterRostersList
+            // 
+            this.dgvHomeGuildMasterRostersList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHomeGuildMasterRostersList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewButtonColumn2});
+            this.dgvHomeGuildMasterRostersList.Location = new System.Drawing.Point(37, 39);
+            this.dgvHomeGuildMasterRostersList.Name = "dgvHomeGuildMasterRostersList";
+            this.dgvHomeGuildMasterRostersList.RowHeadersVisible = false;
+            this.dgvHomeGuildMasterRostersList.RowHeadersWidth = 51;
+            this.dgvHomeGuildMasterRostersList.RowTemplate.Height = 24;
+            this.dgvHomeGuildMasterRostersList.Size = new System.Drawing.Size(480, 516);
+            this.dgvHomeGuildMasterRostersList.TabIndex = 3;
+            this.dgvHomeGuildMasterRostersList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHomeGuildMasterRostersList_CellContentClick);
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "Nom";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.HeaderText = "Membres";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Width = 125;
+            // 
+            // dataGridViewButtonColumn2
+            // 
+            this.dataGridViewButtonColumn2.HeaderText = "Détails";
+            this.dataGridViewButtonColumn2.MinimumWidth = 6;
+            this.dataGridViewButtonColumn2.Name = "dataGridViewButtonColumn2";
+            this.dataGridViewButtonColumn2.Width = 125;
             // 
             // btnHomeGuildMasterAddRoster
             // 
@@ -295,48 +332,11 @@
             this.btnHomeGuildMasterAddRoster.UseVisualStyleBackColor = true;
             this.btnHomeGuildMasterAddRoster.Click += new System.EventHandler(this.btnHomeGuildMasterAddRoster_Click);
             // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.rosterName,
-            this.RosterNbMembres,
-            this.RosterDetails});
-            this.dataGridView2.Location = new System.Drawing.Point(37, 45);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersVisible = false;
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(480, 516);
-            this.dataGridView2.TabIndex = 0;
-            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
-            // 
-            // rosterName
-            // 
-            this.rosterName.HeaderText = "Nom";
-            this.rosterName.MinimumWidth = 6;
-            this.rosterName.Name = "rosterName";
-            this.rosterName.Width = 125;
-            // 
-            // RosterNbMembres
-            // 
-            this.RosterNbMembres.HeaderText = "Membres";
-            this.RosterNbMembres.MinimumWidth = 6;
-            this.RosterNbMembres.Name = "RosterNbMembres";
-            this.RosterNbMembres.Width = 125;
-            // 
-            // RosterDetails
-            // 
-            this.RosterDetails.HeaderText = "Détails";
-            this.RosterDetails.MinimumWidth = 6;
-            this.RosterDetails.Name = "RosterDetails";
-            this.RosterDetails.Width = 125;
-            // 
             // gbHomeGuildMasterRaidList
             // 
             this.gbHomeGuildMasterRaidList.Controls.Add(this.btnHomeGuildMasterAddRaid);
-            this.gbHomeGuildMasterRaidList.Controls.Add(this.monthCalendar1);
-            this.gbHomeGuildMasterRaidList.Controls.Add(this.dgvRaidList);
+            this.gbHomeGuildMasterRaidList.Controls.Add(this.mcHomeGuildMasterRaidCalendar);
+            this.gbHomeGuildMasterRaidList.Controls.Add(this.dgvHomeGuildMasterRaidList);
             this.gbHomeGuildMasterRaidList.Location = new System.Drawing.Point(12, 68);
             this.gbHomeGuildMasterRaidList.Name = "gbHomeGuildMasterRaidList";
             this.gbHomeGuildMasterRaidList.Size = new System.Drawing.Size(561, 614);
@@ -355,30 +355,30 @@
             this.btnHomeGuildMasterAddRaid.UseVisualStyleBackColor = true;
             this.btnHomeGuildMasterAddRaid.Click += new System.EventHandler(this.btnHomeGuildMasterAddRaid_Click);
             // 
-            // monthCalendar1
+            // mcHomeGuildMasterRaidCalendar
             // 
-            this.monthCalendar1.CalendarDimensions = new System.Drawing.Size(2, 1);
-            this.monthCalendar1.Location = new System.Drawing.Point(12, 45);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 0;
-            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
+            this.mcHomeGuildMasterRaidCalendar.CalendarDimensions = new System.Drawing.Size(2, 1);
+            this.mcHomeGuildMasterRaidCalendar.Location = new System.Drawing.Point(12, 45);
+            this.mcHomeGuildMasterRaidCalendar.Name = "mcHomeGuildMasterRaidCalendar";
+            this.mcHomeGuildMasterRaidCalendar.TabIndex = 0;
+            this.mcHomeGuildMasterRaidCalendar.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
             // 
-            // dgvRaidList
+            // dgvHomeGuildMasterRaidList
             // 
-            this.dgvRaidList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRaidList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvHomeGuildMasterRaidList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHomeGuildMasterRaidList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.raidName,
             this.raidinvites,
             this.raidRoster,
             this.raidDetails});
-            this.dgvRaidList.Location = new System.Drawing.Point(12, 275);
-            this.dgvRaidList.Name = "dgvRaidList";
-            this.dgvRaidList.RowHeadersVisible = false;
-            this.dgvRaidList.RowHeadersWidth = 51;
-            this.dgvRaidList.RowTemplate.Height = 24;
-            this.dgvRaidList.Size = new System.Drawing.Size(543, 286);
-            this.dgvRaidList.TabIndex = 1;
-            this.dgvRaidList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgvHomeGuildMasterRaidList.Location = new System.Drawing.Point(12, 275);
+            this.dgvHomeGuildMasterRaidList.Name = "dgvHomeGuildMasterRaidList";
+            this.dgvHomeGuildMasterRaidList.RowHeadersVisible = false;
+            this.dgvHomeGuildMasterRaidList.RowHeadersWidth = 51;
+            this.dgvHomeGuildMasterRaidList.RowTemplate.Height = 24;
+            this.dgvHomeGuildMasterRaidList.Size = new System.Drawing.Size(543, 286);
+            this.dgvHomeGuildMasterRaidList.TabIndex = 1;
+            this.dgvHomeGuildMasterRaidList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // raidName
             // 
@@ -453,7 +453,7 @@
             // 
             // gbHomeGuildMasterGuildRecruitmentList
             // 
-            this.gbHomeGuildMasterGuildRecruitmentList.Controls.Add(this.dataGridView3);
+            this.gbHomeGuildMasterGuildRecruitmentList.Controls.Add(this.dgvHomeGuildMasterRecruitmentList);
             this.gbHomeGuildMasterGuildRecruitmentList.Location = new System.Drawing.Point(515, 80);
             this.gbHomeGuildMasterGuildRecruitmentList.Name = "gbHomeGuildMasterGuildRecruitmentList";
             this.gbHomeGuildMasterGuildRecruitmentList.Size = new System.Drawing.Size(629, 601);
@@ -461,23 +461,23 @@
             this.gbHomeGuildMasterGuildRecruitmentList.TabStop = false;
             this.gbHomeGuildMasterGuildRecruitmentList.Text = "Demandes de recrutement";
             // 
-            // dataGridView3
+            // dgvHomeGuildMasterRecruitmentList
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvHomeGuildMasterRecruitmentList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHomeGuildMasterRecruitmentList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.RecruitmentPlayerName,
             this.RecruitmentPlayerRace,
             this.RecruitmentPlayerClass,
             this.RecruitmentPlayerRole,
             this.RecruitmentAcceptation,
             this.RecruitmentRefuser});
-            this.dataGridView3.Location = new System.Drawing.Point(25, 49);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowHeadersVisible = false;
-            this.dataGridView3.RowHeadersWidth = 51;
-            this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(604, 526);
-            this.dataGridView3.TabIndex = 0;
+            this.dgvHomeGuildMasterRecruitmentList.Location = new System.Drawing.Point(25, 49);
+            this.dgvHomeGuildMasterRecruitmentList.Name = "dgvHomeGuildMasterRecruitmentList";
+            this.dgvHomeGuildMasterRecruitmentList.RowHeadersVisible = false;
+            this.dgvHomeGuildMasterRecruitmentList.RowHeadersWidth = 51;
+            this.dgvHomeGuildMasterRecruitmentList.RowTemplate.Height = 24;
+            this.dgvHomeGuildMasterRecruitmentList.Size = new System.Drawing.Size(604, 526);
+            this.dgvHomeGuildMasterRecruitmentList.TabIndex = 0;
             // 
             // RecruitmentPlayerName
             // 
@@ -527,7 +527,7 @@
             // 
             // gbHomeGuildMasterGuildMembersList
             // 
-            this.gbHomeGuildMasterGuildMembersList.Controls.Add(this.dataGridView1);
+            this.gbHomeGuildMasterGuildMembersList.Controls.Add(this.dgvHomeGuildMasterMembersList);
             this.gbHomeGuildMasterGuildMembersList.Location = new System.Drawing.Point(16, 80);
             this.gbHomeGuildMasterGuildMembersList.Name = "gbHomeGuildMasterGuildMembersList";
             this.gbHomeGuildMasterGuildMembersList.Size = new System.Drawing.Size(488, 601);
@@ -536,49 +536,50 @@
             this.gbHomeGuildMasterGuildMembersList.Text = "Liste des membres";
             this.gbHomeGuildMasterGuildMembersList.Enter += new System.EventHandler(this.gbHomeGuildMasterGuildMembersList_Enter);
             // 
-            // dataGridView1
+            // dgvHomeGuildMasterMembersList
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.playerName,
-            this.playerGrade,
-            this.GuildMemberRole,
-            this.playerDetails});
-            this.dataGridView1.Location = new System.Drawing.Point(0, 49);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(469, 526);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvHomeGuildMasterMembersList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHomeGuildMasterMembersList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewButtonColumn1});
+            this.dgvHomeGuildMasterMembersList.Location = new System.Drawing.Point(13, 39);
+            this.dgvHomeGuildMasterMembersList.Name = "dgvHomeGuildMasterMembersList";
+            this.dgvHomeGuildMasterMembersList.RowHeadersVisible = false;
+            this.dgvHomeGuildMasterMembersList.RowHeadersWidth = 51;
+            this.dgvHomeGuildMasterMembersList.RowTemplate.Height = 24;
+            this.dgvHomeGuildMasterMembersList.Size = new System.Drawing.Size(469, 526);
+            this.dgvHomeGuildMasterMembersList.TabIndex = 1;
+            this.dgvHomeGuildMasterMembersList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHomeGuildMasterMembersList_CellContentClick);
             // 
-            // playerName
+            // dataGridViewTextBoxColumn1
             // 
-            this.playerName.HeaderText = "Nom";
-            this.playerName.MinimumWidth = 6;
-            this.playerName.Name = "playerName";
-            this.playerName.Width = 125;
+            this.dataGridViewTextBoxColumn1.HeaderText = "Nom";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 125;
             // 
-            // playerGrade
+            // dataGridViewTextBoxColumn2
             // 
-            this.playerGrade.HeaderText = "Grade";
-            this.playerGrade.MinimumWidth = 6;
-            this.playerGrade.Name = "playerGrade";
-            this.playerGrade.Width = 125;
+            this.dataGridViewTextBoxColumn2.HeaderText = "Grade";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 125;
             // 
-            // GuildMemberRole
+            // dataGridViewTextBoxColumn3
             // 
-            this.GuildMemberRole.HeaderText = "Rôle";
-            this.GuildMemberRole.MinimumWidth = 6;
-            this.GuildMemberRole.Name = "GuildMemberRole";
-            this.GuildMemberRole.Width = 125;
+            this.dataGridViewTextBoxColumn3.HeaderText = "Rôle";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 125;
             // 
-            // playerDetails
+            // dataGridViewButtonColumn1
             // 
-            this.playerDetails.HeaderText = "Détails";
-            this.playerDetails.MinimumWidth = 6;
-            this.playerDetails.Name = "playerDetails";
-            this.playerDetails.Width = 90;
+            this.dataGridViewButtonColumn1.HeaderText = "Détails";
+            this.dataGridViewButtonColumn1.MinimumWidth = 6;
+            this.dataGridViewButtonColumn1.Name = "dataGridViewButtonColumn1";
+            this.dataGridViewButtonColumn1.Width = 90;
             // 
             // tcHomeGuildMasterInfomations
             // 
@@ -660,15 +661,15 @@
             this.tpHomeGuildRaid.ResumeLayout(false);
             this.tpHomeGuildRaid.PerformLayout();
             this.gbHomeGuildMasterRosterList.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHomeGuildMasterRostersList)).EndInit();
             this.gbHomeGuildMasterRaidList.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRaidList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHomeGuildMasterRaidList)).EndInit();
             this.tpHomeGuildMembers.ResumeLayout(false);
             this.tpHomeGuildMembers.PerformLayout();
             this.gbHomeGuildMasterGuildRecruitmentList.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHomeGuildMasterRecruitmentList)).EndInit();
             this.gbHomeGuildMasterGuildMembersList.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHomeGuildMasterMembersList)).EndInit();
             this.tcHomeGuildMasterInfomations.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -680,42 +681,33 @@
         private System.Windows.Forms.TabPage tpComposants;
         private System.Windows.Forms.TabPage tpHomeGuildRaid;
         private System.Windows.Forms.Label lblHomeRaidList;
-        private System.Windows.Forms.DataGridView dgvRaidList;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.DataGridView dgvHomeGuildMasterRaidList;
+        private System.Windows.Forms.MonthCalendar mcHomeGuildMasterRaidCalendar;
         private System.Windows.Forms.TabPage tpHomeGuildMembers;
         private System.Windows.Forms.GroupBox gbHomeGuildMasterGuildRecruitmentList;
         private System.Windows.Forms.GroupBox gbHomeGuildMasterGuildMembersList;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TabControl tcHomeGuildMasterInfomations;
         private System.Windows.Forms.GroupBox gbHomeGuildMasterRosterList;
         private System.Windows.Forms.GroupBox gbHomeGuildMasterRaidList;
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblHomeGuildMasterNotificationsTitle;
         private System.Windows.Forms.Label lblHomeGuildMasterRoster;
         private System.Windows.Forms.Label lblHomeGuildMasterRaids;
         private System.Windows.Forms.Button btnHomeGuildMasterAddRoster;
-        private System.Windows.Forms.DataGridViewTextBoxColumn rosterName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RosterNbMembres;
-        private System.Windows.Forms.DataGridViewButtonColumn RosterDetails;
         private System.Windows.Forms.Button btnHomeGuildMasterAddRaid;
         private System.Windows.Forms.Label lblHomeGuildMasterRecruitmentTitle;
         private System.Windows.Forms.Label lblHomeGuildMasterMembersTitle;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView dgvHomeGuildMasterRecruitmentList;
         private System.Windows.Forms.DataGridViewTextBoxColumn RecruitmentPlayerName;
         private System.Windows.Forms.DataGridViewTextBoxColumn RecruitmentPlayerRace;
         private System.Windows.Forms.DataGridViewTextBoxColumn RecruitmentPlayerClass;
         private System.Windows.Forms.DataGridViewTextBoxColumn RecruitmentPlayerRole;
         private System.Windows.Forms.DataGridViewButtonColumn RecruitmentAcceptation;
         private System.Windows.Forms.DataGridViewButtonColumn RecruitmentRefuser;
-        private System.Windows.Forms.DataGridViewTextBoxColumn playerName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn playerGrade;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GuildMemberRole;
-        private System.Windows.Forms.DataGridViewButtonColumn playerDetails;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnHomeGuildMasterComponentDemand;
         private System.Windows.Forms.DataGridView dataGridView5;
         private System.Windows.Forms.DataGridViewTextBoxColumn PlayerDemandComponent;
         private System.Windows.Forms.DataGridViewTextBoxColumn PlayerDemandQuantity;
@@ -731,5 +723,14 @@
         private System.Windows.Forms.DataGridViewButtonColumn raidDetails;
         private System.Windows.Forms.LinkLabel lblkHomeGuildMasterProfil;
         private System.Windows.Forms.LinkLabel lblkHomeGuildMasterNotifications;
+        private System.Windows.Forms.DataGridView dgvHomeGuildMasterMembersList;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn1;
+        private System.Windows.Forms.DataGridView dgvHomeGuildMasterRostersList;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn2;
     }
 }

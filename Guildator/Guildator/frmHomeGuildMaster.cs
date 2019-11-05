@@ -55,12 +55,6 @@ namespace Guildator
             frmAddRoster.ShowDialog();
         }
 
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            frmRosterDetails frmRosterDetails = new frmRosterDetails();
-            frmRosterDetails.ShowDialog();
-        }
-
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
@@ -81,6 +75,19 @@ namespace Guildator
         {
             frmAddComponentDemand frmAddComponentDemand = new frmAddComponentDemand();
             frmAddComponentDemand.ShowDialog();
+        }
+
+
+        private void dgvHomeGuildMasterMembersList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            frmPlayerDetails frmPlayerDetails = new frmPlayerDetails();
+            frmPlayerDetails.ShowDialog();
+        }
+
+        private void dgvHomeGuildMasterRostersList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            frmRosterDetails frmRosterDetails = new frmRosterDetails();
+            frmRosterDetails.ShowDialog();
         }
     }
 }

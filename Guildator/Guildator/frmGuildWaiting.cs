@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace Guildator
 {
-    public partial class frmProfilPlayer : Form
+    public partial class frmGuildWaiting : Form
     {
-        public frmProfilPlayer()
+        public frmGuildWaiting()
         {
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void btnGuildWaitingClose_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

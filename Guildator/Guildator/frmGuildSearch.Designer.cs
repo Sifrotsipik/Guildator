@@ -28,20 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGuildSearch));
             this.lblGuildSearchName = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbGuildSearchName = new System.Windows.Forms.TextBox();
             this.btnGuildSearchAction = new System.Windows.Forms.Button();
             this.btnGuildSearchBack = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnGuildSearchSave = new System.Windows.Forms.Button();
             this.gbGuildSearchSearch = new System.Windows.Forms.GroupBox();
             this.gbGuildSearchInformations = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvGuildSearchList = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbGuildSearchSearch.SuspendLayout();
             this.gbGuildSearchInformations.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGuildSearchList)).BeginInit();
             this.SuspendLayout();
             // 
             // lblGuildSearchName
@@ -54,13 +55,13 @@
             this.lblGuildSearchName.TabIndex = 2;
             this.lblGuildSearchName.Text = "Nom :";
             // 
-            // textBox1
+            // tbGuildSearchName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(103, 54);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(258, 33);
-            this.textBox1.TabIndex = 3;
+            this.tbGuildSearchName.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbGuildSearchName.Location = new System.Drawing.Point(103, 54);
+            this.tbGuildSearchName.Name = "tbGuildSearchName";
+            this.tbGuildSearchName.Size = new System.Drawing.Size(258, 33);
+            this.tbGuildSearchName.TabIndex = 3;
             // 
             // btnGuildSearchAction
             // 
@@ -71,6 +72,7 @@
             this.btnGuildSearchAction.TabIndex = 4;
             this.btnGuildSearchAction.Text = "Recherche";
             this.btnGuildSearchAction.UseVisualStyleBackColor = true;
+            this.btnGuildSearchAction.Click += new System.EventHandler(this.btnGuildSearchAction_Click);
             // 
             // btnGuildSearchBack
             // 
@@ -81,20 +83,22 @@
             this.btnGuildSearchBack.TabIndex = 5;
             this.btnGuildSearchBack.Text = "Fermer";
             this.btnGuildSearchBack.UseVisualStyleBackColor = true;
+            this.btnGuildSearchBack.Click += new System.EventHandler(this.btnGuildSearchBack_Click);
             // 
-            // button1
+            // btnGuildSearchSave
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(250, 426);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(207, 37);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Demander à rejoindre";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnGuildSearchSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuildSearchSave.Location = new System.Drawing.Point(250, 426);
+            this.btnGuildSearchSave.Name = "btnGuildSearchSave";
+            this.btnGuildSearchSave.Size = new System.Drawing.Size(207, 37);
+            this.btnGuildSearchSave.TabIndex = 8;
+            this.btnGuildSearchSave.Text = "Demander à rejoindre";
+            this.btnGuildSearchSave.UseVisualStyleBackColor = true;
+            this.btnGuildSearchSave.Click += new System.EventHandler(this.btnGuildSearchSave_Click);
             // 
             // gbGuildSearchSearch
             // 
-            this.gbGuildSearchSearch.Controls.Add(this.textBox1);
+            this.gbGuildSearchSearch.Controls.Add(this.tbGuildSearchName);
             this.gbGuildSearchSearch.Controls.Add(this.btnGuildSearchAction);
             this.gbGuildSearchSearch.Controls.Add(this.lblGuildSearchName);
             this.gbGuildSearchSearch.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -107,7 +111,7 @@
             // 
             // gbGuildSearchInformations
             // 
-            this.gbGuildSearchInformations.Controls.Add(this.dataGridView1);
+            this.gbGuildSearchInformations.Controls.Add(this.dgvGuildSearchList);
             this.gbGuildSearchInformations.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbGuildSearchInformations.Location = new System.Drawing.Point(12, 177);
             this.gbGuildSearchInformations.Name = "gbGuildSearchInformations";
@@ -116,20 +120,20 @@
             this.gbGuildSearchInformations.TabStop = false;
             this.gbGuildSearchInformations.Text = "Liste des Guildes";
             // 
-            // dataGridView1
+            // dgvGuildSearchList
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvGuildSearchList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGuildSearchList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dataGridView1.Location = new System.Drawing.Point(6, 39);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(419, 150);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvGuildSearchList.Location = new System.Drawing.Point(6, 39);
+            this.dgvGuildSearchList.Name = "dgvGuildSearchList";
+            this.dgvGuildSearchList.RowHeadersVisible = false;
+            this.dgvGuildSearchList.RowHeadersWidth = 51;
+            this.dgvGuildSearchList.RowTemplate.Height = 24;
+            this.dgvGuildSearchList.Size = new System.Drawing.Size(419, 150);
+            this.dgvGuildSearchList.TabIndex = 0;
             // 
             // Column1
             // 
@@ -160,27 +164,28 @@
             this.ClientSize = new System.Drawing.Size(484, 489);
             this.Controls.Add(this.gbGuildSearchInformations);
             this.Controls.Add(this.gbGuildSearchSearch);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnGuildSearchSave);
             this.Controls.Add(this.btnGuildSearchBack);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmGuildSearch";
-            this.Text = "Recherche de guilde";
+            this.Text = "Page de recherche de guilde";
             this.gbGuildSearchSearch.ResumeLayout(false);
             this.gbGuildSearchSearch.PerformLayout();
             this.gbGuildSearchInformations.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGuildSearchList)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Label lblGuildSearchName;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbGuildSearchName;
         private System.Windows.Forms.Button btnGuildSearchAction;
         private System.Windows.Forms.Button btnGuildSearchBack;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnGuildSearchSave;
         private System.Windows.Forms.GroupBox gbGuildSearchSearch;
         private System.Windows.Forms.GroupBox gbGuildSearchInformations;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvGuildSearchList;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;

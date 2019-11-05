@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Guildator
 {
-    public partial class frmProfilPlayer : Form
+    public partial class frmPlayerDetails : Form
     {
-        public frmProfilPlayer()
+        public frmPlayerDetails()
         {
             InitializeComponent();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

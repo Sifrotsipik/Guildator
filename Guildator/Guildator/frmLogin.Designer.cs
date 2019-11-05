@@ -35,7 +35,8 @@
             this.tbLoginIdentifiant = new System.Windows.Forms.TextBox();
             this.lblLoginPassword = new System.Windows.Forms.Label();
             this.gbLoginInformations = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbLoginPassword = new System.Windows.Forms.TextBox();
+            this.lblLoginError = new System.Windows.Forms.Label();
             this.gbLoginInformations.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,7 +79,7 @@
             this.tbLoginIdentifiant.Location = new System.Drawing.Point(209, 103);
             this.tbLoginIdentifiant.Name = "tbLoginIdentifiant";
             this.tbLoginIdentifiant.Size = new System.Drawing.Size(200, 33);
-            this.tbLoginIdentifiant.TabIndex = 3;
+            this.tbLoginIdentifiant.TabIndex = 1;
             // 
             // lblLoginPassword
             // 
@@ -92,7 +93,8 @@
             // 
             // gbLoginInformations
             // 
-            this.gbLoginInformations.Controls.Add(this.textBox1);
+            this.gbLoginInformations.Controls.Add(this.lblLoginError);
+            this.gbLoginInformations.Controls.Add(this.tbLoginPassword);
             this.gbLoginInformations.Controls.Add(this.lblLoginEmail);
             this.gbLoginInformations.Controls.Add(this.lblLoginPassword);
             this.gbLoginInformations.Controls.Add(this.tbLoginIdentifiant);
@@ -104,13 +106,24 @@
             this.gbLoginInformations.TabStop = false;
             this.gbLoginInformations.Text = "Connectez-vous à votre compte";
             // 
-            // textBox1
+            // tbLoginPassword
             // 
-            this.textBox1.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(209, 207);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 33);
-            this.textBox1.TabIndex = 6;
+            this.tbLoginPassword.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbLoginPassword.Location = new System.Drawing.Point(209, 207);
+            this.tbLoginPassword.Name = "tbLoginPassword";
+            this.tbLoginPassword.PasswordChar = '*';
+            this.tbLoginPassword.Size = new System.Drawing.Size(200, 33);
+            this.tbLoginPassword.TabIndex = 2;
+            // 
+            // lblLoginError
+            // 
+            this.lblLoginError.AutoSize = true;
+            this.lblLoginError.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLoginError.ForeColor = System.Drawing.Color.Red;
+            this.lblLoginError.Location = new System.Drawing.Point(44, 260);
+            this.lblLoginError.Name = "lblLoginError";
+            this.lblLoginError.Size = new System.Drawing.Size(0, 19);
+            this.lblLoginError.TabIndex = 6;
             // 
             // frmLogin
             // 
@@ -125,6 +138,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmLogin";
             this.Text = "Page de connexion";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.gbLoginInformations.ResumeLayout(false);
             this.gbLoginInformations.PerformLayout();
             this.ResumeLayout(false);
@@ -140,7 +154,8 @@
         private System.Windows.Forms.TextBox tbLoginIdentifiant;
         private System.Windows.Forms.Label lblLoginPassword;
         private System.Windows.Forms.GroupBox gbLoginInformations;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbLoginPassword;
+        private System.Windows.Forms.Label lblLoginError;
     }
 }
 
