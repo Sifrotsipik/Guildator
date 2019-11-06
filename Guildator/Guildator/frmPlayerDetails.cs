@@ -22,5 +22,10 @@ namespace Guildator
             //Si changement de grade -> enregistrer le changement dans la bdd
             this.Dispose();
         }
+
+        private void btnPlayerDetailsClose_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

@@ -189,6 +189,7 @@
             this.btnPlayerDetailsClose.TabIndex = 3;
             this.btnPlayerDetailsClose.Text = "Fermer";
             this.btnPlayerDetailsClose.UseVisualStyleBackColor = true;
+            this.btnPlayerDetailsClose.Click += new System.EventHandler(this.btnPlayerDetailsClose_Click);
             // 
             // frmPlayerDetails
             // 

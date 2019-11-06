@@ -25,6 +25,7 @@ namespace Guildator
         private void btnAddPlayerToRaidSave_Click(object sender, EventArgs e)
         {
             //Sauvegarder l'ajout de membres au raid
+            this.Dispose();
         }
 
         private void dgvAddPlayerToRaidMembersList_CellContentClick(object sender, DataGridViewCellEventArgs e)

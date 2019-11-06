@@ -39,9 +39,6 @@
             this.lbAddRaidName = new System.Windows.Forms.ListBox();
             this.lblAddRaidNameTitle = new System.Windows.Forms.Label();
             this.gbAddRaidParticipantsInformations = new System.Windows.Forms.GroupBox();
-            this.btnAddRaidAddPlayer = new System.Windows.Forms.Button();
-            this.btnAddRaidClose = new System.Windows.Forms.Button();
-            this.btnAddRaidSave = new System.Windows.Forms.Button();
             this.dgvAddRaidParticipantsList = new System.Windows.Forms.DataGridView();
             this.Nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,6 +46,9 @@
             this.Classe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Rôle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnAddRaidAddPlayer = new System.Windows.Forms.Button();
+            this.btnAddRaidClose = new System.Windows.Forms.Button();
+            this.btnAddRaidSave = new System.Windows.Forms.Button();
             this.gbAddRaidInformations.SuspendLayout();
             this.gbAddRaidParticipantsInformations.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAddRaidParticipantsList)).BeginInit();
@@ -162,39 +162,6 @@
             this.gbAddRaidParticipantsInformations.TabStop = false;
             this.gbAddRaidParticipantsInformations.Text = "Liste des participants";
             // 
-            // btnAddRaidAddPlayer
-            // 
-            this.btnAddRaidAddPlayer.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddRaidAddPlayer.Location = new System.Drawing.Point(348, 309);
-            this.btnAddRaidAddPlayer.Name = "btnAddRaidAddPlayer";
-            this.btnAddRaidAddPlayer.Size = new System.Drawing.Size(220, 34);
-            this.btnAddRaidAddPlayer.TabIndex = 22;
-            this.btnAddRaidAddPlayer.Text = "Ajouter un participant";
-            this.btnAddRaidAddPlayer.UseVisualStyleBackColor = true;
-            this.btnAddRaidAddPlayer.Click += new System.EventHandler(this.btnAddRaidAddPlayer_Click);
-            // 
-            // btnAddRaidClose
-            // 
-            this.btnAddRaidClose.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddRaidClose.Location = new System.Drawing.Point(12, 631);
-            this.btnAddRaidClose.Name = "btnAddRaidClose";
-            this.btnAddRaidClose.Size = new System.Drawing.Size(116, 37);
-            this.btnAddRaidClose.TabIndex = 23;
-            this.btnAddRaidClose.Text = "Fermer";
-            this.btnAddRaidClose.UseVisualStyleBackColor = true;
-            this.btnAddRaidClose.Click += new System.EventHandler(this.btnAddRaidClose_Click);
-            // 
-            // btnAddRaidSave
-            // 
-            this.btnAddRaidSave.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddRaidSave.Location = new System.Drawing.Point(472, 631);
-            this.btnAddRaidSave.Name = "btnAddRaidSave";
-            this.btnAddRaidSave.Size = new System.Drawing.Size(126, 39);
-            this.btnAddRaidSave.TabIndex = 24;
-            this.btnAddRaidSave.Text = "Enregistrer";
-            this.btnAddRaidSave.UseVisualStyleBackColor = true;
-            this.btnAddRaidSave.Click += new System.EventHandler(this.btnAddRaidSave_Click);
-            // 
             // dgvAddRaidParticipantsList
             // 
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -265,6 +232,39 @@
             this.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.Delete.Width = 125;
+            // 
+            // btnAddRaidAddPlayer
+            // 
+            this.btnAddRaidAddPlayer.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddRaidAddPlayer.Location = new System.Drawing.Point(311, 309);
+            this.btnAddRaidAddPlayer.Name = "btnAddRaidAddPlayer";
+            this.btnAddRaidAddPlayer.Size = new System.Drawing.Size(257, 34);
+            this.btnAddRaidAddPlayer.TabIndex = 22;
+            this.btnAddRaidAddPlayer.Text = "Ajouter un participant";
+            this.btnAddRaidAddPlayer.UseVisualStyleBackColor = true;
+            this.btnAddRaidAddPlayer.Click += new System.EventHandler(this.btnAddRaidAddPlayer_Click);
+            // 
+            // btnAddRaidClose
+            // 
+            this.btnAddRaidClose.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddRaidClose.Location = new System.Drawing.Point(12, 631);
+            this.btnAddRaidClose.Name = "btnAddRaidClose";
+            this.btnAddRaidClose.Size = new System.Drawing.Size(116, 37);
+            this.btnAddRaidClose.TabIndex = 23;
+            this.btnAddRaidClose.Text = "Fermer";
+            this.btnAddRaidClose.UseVisualStyleBackColor = true;
+            this.btnAddRaidClose.Click += new System.EventHandler(this.btnAddRaidClose_Click);
+            // 
+            // btnAddRaidSave
+            // 
+            this.btnAddRaidSave.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddRaidSave.Location = new System.Drawing.Point(472, 631);
+            this.btnAddRaidSave.Name = "btnAddRaidSave";
+            this.btnAddRaidSave.Size = new System.Drawing.Size(126, 39);
+            this.btnAddRaidSave.TabIndex = 24;
+            this.btnAddRaidSave.Text = "Enregistrer";
+            this.btnAddRaidSave.UseVisualStyleBackColor = true;
+            this.btnAddRaidSave.Click += new System.EventHandler(this.btnAddRaidSave_Click);
             // 
             // frmAddRaid
             // 

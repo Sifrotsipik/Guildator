@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRaidDetails));
             this.gbRaidDetailsInformations = new System.Windows.Forms.GroupBox();
             this.lblRaidDetailsWaitingNumber = new System.Windows.Forms.Label();
@@ -277,14 +276,6 @@
             // 
             // dgvRaidDetailsParticipantsList
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvRaidDetailsParticipantsList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvRaidDetailsParticipantsList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvRaidDetailsParticipantsList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -349,9 +340,9 @@
             // btnRaidDetailsAddMember
             // 
             this.btnRaidDetailsAddMember.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRaidDetailsAddMember.Location = new System.Drawing.Point(397, 295);
+            this.btnRaidDetailsAddMember.Location = new System.Drawing.Point(372, 295);
             this.btnRaidDetailsAddMember.Name = "btnRaidDetailsAddMember";
-            this.btnRaidDetailsAddMember.Size = new System.Drawing.Size(180, 31);
+            this.btnRaidDetailsAddMember.Size = new System.Drawing.Size(205, 31);
             this.btnRaidDetailsAddMember.TabIndex = 21;
             this.btnRaidDetailsAddMember.Text = "Ajouter un membre";
             this.btnRaidDetailsAddMember.UseVisualStyleBackColor = true;

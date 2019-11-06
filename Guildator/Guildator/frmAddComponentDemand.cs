@@ -34,6 +34,7 @@ namespace Guildator
             }
             else {
                 //Créer l'objet ComponentDemand
+                this.Dispose();
             }
         }
 

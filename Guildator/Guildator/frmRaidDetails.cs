@@ -40,6 +40,7 @@ namespace Guildator
         private void btnRaidDetailsSave_Click(object sender, EventArgs e)
         {
             //Sauvegarder les modifications du raid
+            this.Dispose();
         }
     }
 }

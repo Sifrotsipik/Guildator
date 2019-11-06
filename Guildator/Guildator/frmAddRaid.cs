@@ -42,7 +42,8 @@ namespace Guildator
 
         private void btnAddRaidSave_Click(object sender, EventArgs e)
         {
-            //Enregistrement du raid
+            //Enregistrement du raid dans bdd
+            this.Dispose();
         }
     }
 }

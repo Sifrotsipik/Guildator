@@ -138,9 +138,9 @@
             // btnHomeGuildMasterComponentDemand
             // 
             this.btnHomeGuildMasterComponentDemand.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHomeGuildMasterComponentDemand.Location = new System.Drawing.Point(264, 543);
+            this.btnHomeGuildMasterComponentDemand.Location = new System.Drawing.Point(202, 543);
             this.btnHomeGuildMasterComponentDemand.Name = "btnHomeGuildMasterComponentDemand";
-            this.btnHomeGuildMasterComponentDemand.Size = new System.Drawing.Size(217, 41);
+            this.btnHomeGuildMasterComponentDemand.Size = new System.Drawing.Size(279, 41);
             this.btnHomeGuildMasterComponentDemand.TabIndex = 2;
             this.btnHomeGuildMasterComponentDemand.Text = "Demander un composant";
             this.btnHomeGuildMasterComponentDemand.UseVisualStyleBackColor = true;
@@ -280,9 +280,9 @@
             // 
             this.gbHomeGuildMasterRosterInformations.Controls.Add(this.dgvHomeGuildMasterRostersList);
             this.gbHomeGuildMasterRosterInformations.Controls.Add(this.btnHomeGuildMasterAddRoster);
-            this.gbHomeGuildMasterRosterInformations.Location = new System.Drawing.Point(597, 68);
+            this.gbHomeGuildMasterRosterInformations.Location = new System.Drawing.Point(616, 68);
             this.gbHomeGuildMasterRosterInformations.Name = "gbHomeGuildMasterRosterInformations";
-            this.gbHomeGuildMasterRosterInformations.Size = new System.Drawing.Size(542, 614);
+            this.gbHomeGuildMasterRosterInformations.Size = new System.Drawing.Size(523, 614);
             this.gbHomeGuildMasterRosterInformations.TabIndex = 5;
             this.gbHomeGuildMasterRosterInformations.TabStop = false;
             this.gbHomeGuildMasterRosterInformations.Text = "Liste des Rosters";
@@ -294,7 +294,7 @@
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewButtonColumn2});
-            this.dgvHomeGuildMasterRostersList.Location = new System.Drawing.Point(37, 39);
+            this.dgvHomeGuildMasterRostersList.Location = new System.Drawing.Point(26, 39);
             this.dgvHomeGuildMasterRostersList.Name = "dgvHomeGuildMasterRostersList";
             this.dgvHomeGuildMasterRostersList.RowHeadersVisible = false;
             this.dgvHomeGuildMasterRostersList.RowHeadersWidth = 51;
@@ -342,7 +342,7 @@
             this.gbHomeGuildMasterRaidInformations.Controls.Add(this.dgvHomeGuildMasterRaidList);
             this.gbHomeGuildMasterRaidInformations.Location = new System.Drawing.Point(12, 68);
             this.gbHomeGuildMasterRaidInformations.Name = "gbHomeGuildMasterRaidInformations";
-            this.gbHomeGuildMasterRaidInformations.Size = new System.Drawing.Size(561, 614);
+            this.gbHomeGuildMasterRaidInformations.Size = new System.Drawing.Size(579, 614);
             this.gbHomeGuildMasterRaidInformations.TabIndex = 4;
             this.gbHomeGuildMasterRaidInformations.TabStop = false;
             this.gbHomeGuildMasterRaidInformations.Text = "Liste des raids";
