@@ -23,17 +23,33 @@ namespace Guildator
         {
             frmAddGuild frmAddGuild = new frmAddGuild();
             frmAddGuild.Show();
-            this.Hide();
+            this.Dispose();
         }
 
         private void btnAddOrSearchGuildSearch_Click(object sender, EventArgs e)
         {
             frmGuildSearch frmGuildSearch = new frmGuildSearch();
             frmGuildSearch.Show();
-            this.Hide();
+            this.Dispose();
         }
 
         private void lblkHomeGuildMasterProfil_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            //Renvoyer sur frmPlayerProfil sans guilde
+        }
+
+        private void btnAddOrSearchGuildExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void lblkAddOrSearchGuildNotifications_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmNotifications frmNotifications = new frmNotifications();
+            frmNotifications.ShowDialog();
+        }
+
+        private void frmAddOrSearchGuild_Load(object sender, EventArgs e)
         {
 
         }

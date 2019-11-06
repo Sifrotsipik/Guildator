@@ -40,7 +40,7 @@ namespace Guildator
 
         private void frmHomeGuildMaster_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnHomeGuildMasterAddRaid_Click(object sender, EventArgs e)
@@ -55,11 +55,6 @@ namespace Guildator
             frmAddRoster.ShowDialog();
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
         private void lblkHomeGuildMasterProfil_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
                         
@@ -69,12 +64,6 @@ namespace Guildator
         {
             frmNotifications frmNotifications = new frmNotifications();
             frmNotifications.ShowDialog();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            frmAddComponentDemand frmAddComponentDemand = new frmAddComponentDemand();
-            frmAddComponentDemand.ShowDialog();
         }
 
 
@@ -88,6 +77,35 @@ namespace Guildator
         {
             frmRosterDetails frmRosterDetails = new frmRosterDetails();
             frmRosterDetails.ShowDialog();
+        }
+
+        private void btnHomeGuildMasterComponentDemand_Click(object sender, EventArgs e)
+        {
+            frmAddComponentDemand frmAddComponentDemand = new frmAddComponentDemand();
+            frmAddComponentDemand.ShowDialog();
+        }
+
+        private void lblkHomeGuildMasterProfil_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmProfilGuildMaster frmProfilGuildMaster = new frmProfilGuildMaster();
+            frmProfilGuildMaster.ShowDialog();
+        }
+
+
+        private void dgvHomeGuildMasterMyDemands_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            frmComponentDemandDetails frmComponentDemandDetails = new frmComponentDemandDetails();
+            frmComponentDemandDetails.ShowDialog();
+        }
+
+        private void dgvHomeGuildMasterAllComponentDemand_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //Adaptation de la demande dans la bdd
+        }
+
+        private void dgvHomeGuildMasterRecruitmentList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //Accepter/refuser la demande selon le choix
         }
     }
 }

@@ -16,5 +16,33 @@ namespace Guildator
         {
             InitializeComponent();
         }
+
+
+
+        //Lors du choix du roster, la dgvAddRaidParticipantsList doit être mise à jour avec les membres du roster
+        //Si case cbAddRaidGuildMasterOk est cochée, adapter la dgv
+
+
+        private void dgvAddRaidParticipantsList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //Supprimer le joueur du raid et le notifier
+        }
+
+        private void btnAddRaidAddPlayer_Click(object sender, EventArgs e)
+        {
+            //Envoyer la liste actuelle des participants
+            frmAddPlayerToRaid frmAddPlayerToRaid = new frmAddPlayerToRaid();
+            frmAddPlayerToRaid.ShowDialog();
+        }
+
+        private void btnAddRaidClose_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void btnAddRaidSave_Click(object sender, EventArgs e)
+        {
+            //Enregistrement du raid
+        }
     }
 }

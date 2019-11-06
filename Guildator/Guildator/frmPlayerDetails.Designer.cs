@@ -28,19 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPlayerDetails));
             this.lblPlayerDetailsNameTitle = new System.Windows.Forms.Label();
             this.gbPlayerDetailsInformations = new System.Windows.Forms.GroupBox();
-            this.lblPlayerDetailsName = new System.Windows.Forms.Label();
-            this.lblPlayerDetailsGradeTitle = new System.Windows.Forms.Label();
-            this.lbPlayerDetailsGradeList = new System.Windows.Forms.ListBox();
-            this.lblPlayerDetailsRaceTitle = new System.Windows.Forms.Label();
-            this.lblPlayerDetailsClassTitle = new System.Windows.Forms.Label();
+            this.lblPlayerDetailsRole = new System.Windows.Forms.Label();
+            this.lblPlayerDetailsClass = new System.Windows.Forms.Label();
+            this.lblPlayerDetailsRace = new System.Windows.Forms.Label();
             this.lblPlayerDetailsRoleTitle = new System.Windows.Forms.Label();
+            this.lblPlayerDetailsClassTitle = new System.Windows.Forms.Label();
+            this.lblPlayerDetailsRaceTitle = new System.Windows.Forms.Label();
+            this.lbPlayerDetailsGradeList = new System.Windows.Forms.ListBox();
+            this.lblPlayerDetailsGradeTitle = new System.Windows.Forms.Label();
+            this.lblPlayerDetailsName = new System.Windows.Forms.Label();
             this.btnPlayerDetailsSave = new System.Windows.Forms.Button();
             this.btnPlayerDetailsClose = new System.Windows.Forms.Button();
-            this.lblPlayerDetailsRace = new System.Windows.Forms.Label();
-            this.lblPlayerDetailsClass = new System.Windows.Forms.Label();
-            this.lblPlayerDetailsRole = new System.Windows.Forms.Label();
             this.gbPlayerDetailsInformations.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,25 +75,65 @@
             this.gbPlayerDetailsInformations.TabStop = false;
             this.gbPlayerDetailsInformations.Text = "Informations du personnage";
             // 
-            // lblPlayerDetailsName
+            // lblPlayerDetailsRole
             // 
-            this.lblPlayerDetailsName.AutoSize = true;
-            this.lblPlayerDetailsName.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayerDetailsName.Location = new System.Drawing.Point(121, 62);
-            this.lblPlayerDetailsName.Name = "lblPlayerDetailsName";
-            this.lblPlayerDetailsName.Size = new System.Drawing.Size(147, 26);
-            this.lblPlayerDetailsName.TabIndex = 1;
-            this.lblPlayerDetailsName.Text = "JoueurExemple";
+            this.lblPlayerDetailsRole.AutoSize = true;
+            this.lblPlayerDetailsRole.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerDetailsRole.Location = new System.Drawing.Point(121, 229);
+            this.lblPlayerDetailsRole.Name = "lblPlayerDetailsRole";
+            this.lblPlayerDetailsRole.Size = new System.Drawing.Size(65, 26);
+            this.lblPlayerDetailsRole.TabIndex = 9;
+            this.lblPlayerDetailsRole.Text = "TANK";
             // 
-            // lblPlayerDetailsGradeTitle
+            // lblPlayerDetailsClass
             // 
-            this.lblPlayerDetailsGradeTitle.AutoSize = true;
-            this.lblPlayerDetailsGradeTitle.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayerDetailsGradeTitle.Location = new System.Drawing.Point(35, 110);
-            this.lblPlayerDetailsGradeTitle.Name = "lblPlayerDetailsGradeTitle";
-            this.lblPlayerDetailsGradeTitle.Size = new System.Drawing.Size(77, 26);
-            this.lblPlayerDetailsGradeTitle.TabIndex = 2;
-            this.lblPlayerDetailsGradeTitle.Text = "Grade :";
+            this.lblPlayerDetailsClass.AutoSize = true;
+            this.lblPlayerDetailsClass.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerDetailsClass.Location = new System.Drawing.Point(121, 190);
+            this.lblPlayerDetailsClass.Name = "lblPlayerDetailsClass";
+            this.lblPlayerDetailsClass.Size = new System.Drawing.Size(86, 26);
+            this.lblPlayerDetailsClass.TabIndex = 8;
+            this.lblPlayerDetailsClass.Text = "Guerrier";
+            // 
+            // lblPlayerDetailsRace
+            // 
+            this.lblPlayerDetailsRace.AutoSize = true;
+            this.lblPlayerDetailsRace.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerDetailsRace.Location = new System.Drawing.Point(121, 153);
+            this.lblPlayerDetailsRace.Name = "lblPlayerDetailsRace";
+            this.lblPlayerDetailsRace.Size = new System.Drawing.Size(76, 26);
+            this.lblPlayerDetailsRace.TabIndex = 7;
+            this.lblPlayerDetailsRace.Text = "Humain";
+            // 
+            // lblPlayerDetailsRoleTitle
+            // 
+            this.lblPlayerDetailsRoleTitle.AutoSize = true;
+            this.lblPlayerDetailsRoleTitle.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerDetailsRoleTitle.Location = new System.Drawing.Point(35, 229);
+            this.lblPlayerDetailsRoleTitle.Name = "lblPlayerDetailsRoleTitle";
+            this.lblPlayerDetailsRoleTitle.Size = new System.Drawing.Size(61, 26);
+            this.lblPlayerDetailsRoleTitle.TabIndex = 6;
+            this.lblPlayerDetailsRoleTitle.Text = "Rôle :";
+            // 
+            // lblPlayerDetailsClassTitle
+            // 
+            this.lblPlayerDetailsClassTitle.AutoSize = true;
+            this.lblPlayerDetailsClassTitle.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerDetailsClassTitle.Location = new System.Drawing.Point(35, 190);
+            this.lblPlayerDetailsClassTitle.Name = "lblPlayerDetailsClassTitle";
+            this.lblPlayerDetailsClassTitle.Size = new System.Drawing.Size(78, 26);
+            this.lblPlayerDetailsClassTitle.TabIndex = 5;
+            this.lblPlayerDetailsClassTitle.Text = "Classe :";
+            // 
+            // lblPlayerDetailsRaceTitle
+            // 
+            this.lblPlayerDetailsRaceTitle.AutoSize = true;
+            this.lblPlayerDetailsRaceTitle.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerDetailsRaceTitle.Location = new System.Drawing.Point(35, 153);
+            this.lblPlayerDetailsRaceTitle.Name = "lblPlayerDetailsRaceTitle";
+            this.lblPlayerDetailsRaceTitle.Size = new System.Drawing.Size(66, 26);
+            this.lblPlayerDetailsRaceTitle.TabIndex = 4;
+            this.lblPlayerDetailsRaceTitle.Text = "Race :";
             // 
             // lbPlayerDetailsGradeList
             // 
@@ -108,35 +149,25 @@
             this.lbPlayerDetailsGradeList.Size = new System.Drawing.Size(120, 28);
             this.lbPlayerDetailsGradeList.TabIndex = 3;
             // 
-            // lblPlayerDetailsRaceTitle
+            // lblPlayerDetailsGradeTitle
             // 
-            this.lblPlayerDetailsRaceTitle.AutoSize = true;
-            this.lblPlayerDetailsRaceTitle.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayerDetailsRaceTitle.Location = new System.Drawing.Point(35, 153);
-            this.lblPlayerDetailsRaceTitle.Name = "lblPlayerDetailsRaceTitle";
-            this.lblPlayerDetailsRaceTitle.Size = new System.Drawing.Size(66, 26);
-            this.lblPlayerDetailsRaceTitle.TabIndex = 4;
-            this.lblPlayerDetailsRaceTitle.Text = "Race :";
+            this.lblPlayerDetailsGradeTitle.AutoSize = true;
+            this.lblPlayerDetailsGradeTitle.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerDetailsGradeTitle.Location = new System.Drawing.Point(35, 110);
+            this.lblPlayerDetailsGradeTitle.Name = "lblPlayerDetailsGradeTitle";
+            this.lblPlayerDetailsGradeTitle.Size = new System.Drawing.Size(77, 26);
+            this.lblPlayerDetailsGradeTitle.TabIndex = 2;
+            this.lblPlayerDetailsGradeTitle.Text = "Grade :";
             // 
-            // lblPlayerDetailsClassTitle
+            // lblPlayerDetailsName
             // 
-            this.lblPlayerDetailsClassTitle.AutoSize = true;
-            this.lblPlayerDetailsClassTitle.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayerDetailsClassTitle.Location = new System.Drawing.Point(35, 190);
-            this.lblPlayerDetailsClassTitle.Name = "lblPlayerDetailsClassTitle";
-            this.lblPlayerDetailsClassTitle.Size = new System.Drawing.Size(78, 26);
-            this.lblPlayerDetailsClassTitle.TabIndex = 5;
-            this.lblPlayerDetailsClassTitle.Text = "Classe :";
-            // 
-            // lblPlayerDetailsRoleTitle
-            // 
-            this.lblPlayerDetailsRoleTitle.AutoSize = true;
-            this.lblPlayerDetailsRoleTitle.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayerDetailsRoleTitle.Location = new System.Drawing.Point(35, 229);
-            this.lblPlayerDetailsRoleTitle.Name = "lblPlayerDetailsRoleTitle";
-            this.lblPlayerDetailsRoleTitle.Size = new System.Drawing.Size(61, 26);
-            this.lblPlayerDetailsRoleTitle.TabIndex = 6;
-            this.lblPlayerDetailsRoleTitle.Text = "Rôle :";
+            this.lblPlayerDetailsName.AutoSize = true;
+            this.lblPlayerDetailsName.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerDetailsName.Location = new System.Drawing.Point(121, 62);
+            this.lblPlayerDetailsName.Name = "lblPlayerDetailsName";
+            this.lblPlayerDetailsName.Size = new System.Drawing.Size(147, 26);
+            this.lblPlayerDetailsName.TabIndex = 1;
+            this.lblPlayerDetailsName.Text = "JoueurExemple";
             // 
             // btnPlayerDetailsSave
             // 
@@ -147,6 +178,7 @@
             this.btnPlayerDetailsSave.TabIndex = 2;
             this.btnPlayerDetailsSave.Text = "Enregistrer";
             this.btnPlayerDetailsSave.UseVisualStyleBackColor = true;
+            this.btnPlayerDetailsSave.Click += new System.EventHandler(this.btnPlayerDetailsSave_Click);
             // 
             // btnPlayerDetailsClose
             // 
@@ -158,36 +190,6 @@
             this.btnPlayerDetailsClose.Text = "Fermer";
             this.btnPlayerDetailsClose.UseVisualStyleBackColor = true;
             // 
-            // lblPlayerDetailsRace
-            // 
-            this.lblPlayerDetailsRace.AutoSize = true;
-            this.lblPlayerDetailsRace.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayerDetailsRace.Location = new System.Drawing.Point(121, 153);
-            this.lblPlayerDetailsRace.Name = "lblPlayerDetailsRace";
-            this.lblPlayerDetailsRace.Size = new System.Drawing.Size(76, 26);
-            this.lblPlayerDetailsRace.TabIndex = 7;
-            this.lblPlayerDetailsRace.Text = "Humain";
-            // 
-            // lblPlayerDetailsClass
-            // 
-            this.lblPlayerDetailsClass.AutoSize = true;
-            this.lblPlayerDetailsClass.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayerDetailsClass.Location = new System.Drawing.Point(121, 190);
-            this.lblPlayerDetailsClass.Name = "lblPlayerDetailsClass";
-            this.lblPlayerDetailsClass.Size = new System.Drawing.Size(86, 26);
-            this.lblPlayerDetailsClass.TabIndex = 8;
-            this.lblPlayerDetailsClass.Text = "Guerrier";
-            // 
-            // lblPlayerDetailsRole
-            // 
-            this.lblPlayerDetailsRole.AutoSize = true;
-            this.lblPlayerDetailsRole.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayerDetailsRole.Location = new System.Drawing.Point(121, 229);
-            this.lblPlayerDetailsRole.Name = "lblPlayerDetailsRole";
-            this.lblPlayerDetailsRole.Size = new System.Drawing.Size(65, 26);
-            this.lblPlayerDetailsRole.TabIndex = 9;
-            this.lblPlayerDetailsRole.Text = "TANK";
-            // 
             // frmPlayerDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
@@ -198,8 +200,9 @@
             this.Controls.Add(this.btnPlayerDetailsSave);
             this.Controls.Add(this.gbPlayerDetailsInformations);
             this.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmPlayerDetails";
-            this.Text = "frmPlayerDetails";
+            this.Text = "Page de détails du personnage";
             this.gbPlayerDetailsInformations.ResumeLayout(false);
             this.gbPlayerDetailsInformations.PerformLayout();
             this.ResumeLayout(false);

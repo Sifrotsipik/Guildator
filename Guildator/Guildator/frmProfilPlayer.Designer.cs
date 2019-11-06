@@ -28,254 +28,270 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.lblRegistrationCharacterName = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.lblRegistrationFaction = new System.Windows.Forms.Label();
-            this.rbRegistrationAlliance = new System.Windows.Forms.RadioButton();
-            this.rbRegistrationHorde = new System.Windows.Forms.RadioButton();
-            this.lblRegistrationRace = new System.Windows.Forms.Label();
-            this.lbRegistrationRace = new System.Windows.Forms.ListBox();
-            this.lblRegistrationRole = new System.Windows.Forms.Label();
-            this.lblRegistrationClass = new System.Windows.Forms.Label();
-            this.lbRegistrationClass = new System.Windows.Forms.ListBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProfilPlayer));
+            this.gbProfilPlayerAccountIntomations = new System.Windows.Forms.GroupBox();
+            this.tbProfilPlayerPassword = new System.Windows.Forms.TextBox();
+            this.lblProfilPlayerPasswordTitle = new System.Windows.Forms.Label();
+            this.tbProfilPlayerEmail = new System.Windows.Forms.TextBox();
+            this.lblProfilPlayerEmailTitle = new System.Windows.Forms.Label();
+            this.gbProfilPlayerCharacterInformations = new System.Windows.Forms.GroupBox();
+            this.btnProfilPlayerAccountDelete = new System.Windows.Forms.Button();
+            this.rbProfilPlayerDps = new System.Windows.Forms.RadioButton();
+            this.rbProfilPlayerHeal = new System.Windows.Forms.RadioButton();
+            this.rbProfilPlayerTank = new System.Windows.Forms.RadioButton();
+            this.lblProfilPlayerCharacterNameTitle = new System.Windows.Forms.Label();
+            this.tbProfilPlayerCharacterName = new System.Windows.Forms.TextBox();
+            this.lblProfilPlayerFactionTitle = new System.Windows.Forms.Label();
+            this.rbProfilPlayerAlliance = new System.Windows.Forms.RadioButton();
+            this.rbProfilPlayerHorde = new System.Windows.Forms.RadioButton();
+            this.lblProfilPlayerRaceTitle = new System.Windows.Forms.Label();
+            this.lbProfilPlayerRace = new System.Windows.Forms.ListBox();
+            this.lblProfilPlayerRoleTitle = new System.Windows.Forms.Label();
+            this.lblProfilPlayerClassTitle = new System.Windows.Forms.Label();
+            this.lbProfilPlayerClass = new System.Windows.Forms.ListBox();
+            this.btnProfilPlayerSave = new System.Windows.Forms.Button();
+            this.btnProfilPlayerClose = new System.Windows.Forms.Button();
+            this.gbProfilPlayerGuildInformations = new System.Windows.Forms.GroupBox();
+            this.lblProfilPlayerGrade = new System.Windows.Forms.Label();
+            this.lblProfilPlayerGradeTitle = new System.Windows.Forms.Label();
+            this.lblProfilPlayerGuildName = new System.Windows.Forms.Label();
+            this.btnProfilPlayerGuildQuit = new System.Windows.Forms.Button();
+            this.lblProfilPlayerGuildNameTitle = new System.Windows.Forms.Label();
+            this.gbProfilPlayerAccountIntomations.SuspendLayout();
+            this.gbProfilPlayerCharacterInformations.SuspendLayout();
+            this.gbProfilPlayerGuildInformations.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // gbProfilPlayerAccountIntomations
             // 
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(24, 13);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(435, 160);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Informations du compte";
+            this.gbProfilPlayerAccountIntomations.Controls.Add(this.tbProfilPlayerPassword);
+            this.gbProfilPlayerAccountIntomations.Controls.Add(this.lblProfilPlayerPasswordTitle);
+            this.gbProfilPlayerAccountIntomations.Controls.Add(this.tbProfilPlayerEmail);
+            this.gbProfilPlayerAccountIntomations.Controls.Add(this.lblProfilPlayerEmailTitle);
+            this.gbProfilPlayerAccountIntomations.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbProfilPlayerAccountIntomations.Location = new System.Drawing.Point(24, 13);
+            this.gbProfilPlayerAccountIntomations.Name = "gbProfilPlayerAccountIntomations";
+            this.gbProfilPlayerAccountIntomations.Size = new System.Drawing.Size(435, 160);
+            this.gbProfilPlayerAccountIntomations.TabIndex = 0;
+            this.gbProfilPlayerAccountIntomations.TabStop = false;
+            this.gbProfilPlayerAccountIntomations.Text = "Informations du compte";
             // 
-            // textBox2
+            // tbProfilPlayerPassword
             // 
-            this.textBox2.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(183, 104);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(228, 33);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.Text = "************";
+            this.tbProfilPlayerPassword.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbProfilPlayerPassword.Location = new System.Drawing.Point(183, 104);
+            this.tbProfilPlayerPassword.Name = "tbProfilPlayerPassword";
+            this.tbProfilPlayerPassword.Size = new System.Drawing.Size(228, 33);
+            this.tbProfilPlayerPassword.TabIndex = 3;
+            this.tbProfilPlayerPassword.Text = "************";
             // 
-            // label2
+            // lblProfilPlayerPasswordTitle
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(36, 107);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 26);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Mot de passe : ";
+            this.lblProfilPlayerPasswordTitle.AutoSize = true;
+            this.lblProfilPlayerPasswordTitle.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfilPlayerPasswordTitle.Location = new System.Drawing.Point(36, 107);
+            this.lblProfilPlayerPasswordTitle.Name = "lblProfilPlayerPasswordTitle";
+            this.lblProfilPlayerPasswordTitle.Size = new System.Drawing.Size(146, 26);
+            this.lblProfilPlayerPasswordTitle.TabIndex = 2;
+            this.lblProfilPlayerPasswordTitle.Text = "Mot de passe : ";
             // 
-            // textBox1
+            // tbProfilPlayerEmail
             // 
-            this.textBox1.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(183, 58);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(228, 33);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "player@exemple.ch";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.tbProfilPlayerEmail.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbProfilPlayerEmail.Location = new System.Drawing.Point(183, 58);
+            this.tbProfilPlayerEmail.Name = "tbProfilPlayerEmail";
+            this.tbProfilPlayerEmail.Size = new System.Drawing.Size(228, 33);
+            this.tbProfilPlayerEmail.TabIndex = 1;
+            this.tbProfilPlayerEmail.Text = "player@exemple.ch";
+            this.tbProfilPlayerEmail.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // label1
+            // lblProfilPlayerEmailTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(32, 58);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 26);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Adresse email :";
+            this.lblProfilPlayerEmailTitle.AutoSize = true;
+            this.lblProfilPlayerEmailTitle.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfilPlayerEmailTitle.Location = new System.Drawing.Point(32, 58);
+            this.lblProfilPlayerEmailTitle.Name = "lblProfilPlayerEmailTitle";
+            this.lblProfilPlayerEmailTitle.Size = new System.Drawing.Size(145, 26);
+            this.lblProfilPlayerEmailTitle.TabIndex = 0;
+            this.lblProfilPlayerEmailTitle.Text = "Adresse email :";
             // 
-            // groupBox2
+            // gbProfilPlayerCharacterInformations
             // 
-            this.groupBox2.Controls.Add(this.radioButton3);
-            this.groupBox2.Controls.Add(this.radioButton2);
-            this.groupBox2.Controls.Add(this.radioButton1);
-            this.groupBox2.Controls.Add(this.lblRegistrationCharacterName);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.lblRegistrationFaction);
-            this.groupBox2.Controls.Add(this.rbRegistrationAlliance);
-            this.groupBox2.Controls.Add(this.rbRegistrationHorde);
-            this.groupBox2.Controls.Add(this.lblRegistrationRace);
-            this.groupBox2.Controls.Add(this.lbRegistrationRace);
-            this.groupBox2.Controls.Add(this.lblRegistrationRole);
-            this.groupBox2.Controls.Add(this.lblRegistrationClass);
-            this.groupBox2.Controls.Add(this.lbRegistrationClass);
-            this.groupBox2.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(24, 179);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(435, 368);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Informations du personnage";
+            this.gbProfilPlayerCharacterInformations.Controls.Add(this.btnProfilPlayerAccountDelete);
+            this.gbProfilPlayerCharacterInformations.Controls.Add(this.rbProfilPlayerDps);
+            this.gbProfilPlayerCharacterInformations.Controls.Add(this.rbProfilPlayerHeal);
+            this.gbProfilPlayerCharacterInformations.Controls.Add(this.rbProfilPlayerTank);
+            this.gbProfilPlayerCharacterInformations.Controls.Add(this.lblProfilPlayerCharacterNameTitle);
+            this.gbProfilPlayerCharacterInformations.Controls.Add(this.tbProfilPlayerCharacterName);
+            this.gbProfilPlayerCharacterInformations.Controls.Add(this.lblProfilPlayerFactionTitle);
+            this.gbProfilPlayerCharacterInformations.Controls.Add(this.rbProfilPlayerAlliance);
+            this.gbProfilPlayerCharacterInformations.Controls.Add(this.rbProfilPlayerHorde);
+            this.gbProfilPlayerCharacterInformations.Controls.Add(this.lblProfilPlayerRaceTitle);
+            this.gbProfilPlayerCharacterInformations.Controls.Add(this.lbProfilPlayerRace);
+            this.gbProfilPlayerCharacterInformations.Controls.Add(this.lblProfilPlayerRoleTitle);
+            this.gbProfilPlayerCharacterInformations.Controls.Add(this.lblProfilPlayerClassTitle);
+            this.gbProfilPlayerCharacterInformations.Controls.Add(this.lbProfilPlayerClass);
+            this.gbProfilPlayerCharacterInformations.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbProfilPlayerCharacterInformations.Location = new System.Drawing.Point(24, 179);
+            this.gbProfilPlayerCharacterInformations.Name = "gbProfilPlayerCharacterInformations";
+            this.gbProfilPlayerCharacterInformations.Size = new System.Drawing.Size(435, 368);
+            this.gbProfilPlayerCharacterInformations.TabIndex = 1;
+            this.gbProfilPlayerCharacterInformations.TabStop = false;
+            this.gbProfilPlayerCharacterInformations.Text = "Informations du personnage";
             // 
-            // radioButton3
+            // btnProfilPlayerAccountDelete
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(309, 312);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(70, 30);
-            this.radioButton3.TabIndex = 36;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "DPS";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.btnProfilPlayerAccountDelete.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnProfilPlayerAccountDelete.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfilPlayerAccountDelete.ForeColor = System.Drawing.Color.Red;
+            this.btnProfilPlayerAccountDelete.Location = new System.Drawing.Point(187, 313);
+            this.btnProfilPlayerAccountDelete.Name = "btnProfilPlayerAccountDelete";
+            this.btnProfilPlayerAccountDelete.Size = new System.Drawing.Size(215, 34);
+            this.btnProfilPlayerAccountDelete.TabIndex = 37;
+            this.btnProfilPlayerAccountDelete.Text = "Supprimer le compte";
+            this.btnProfilPlayerAccountDelete.UseVisualStyleBackColor = false;
+            this.btnProfilPlayerAccountDelete.Click += new System.EventHandler(this.btnProfilPlayerAccountDelete_Click);
             // 
-            // radioButton2
+            // rbProfilPlayerDps
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Checked = true;
-            this.radioButton2.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(220, 312);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(83, 30);
-            this.radioButton2.TabIndex = 35;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "HEAL";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbProfilPlayerDps.AutoSize = true;
+            this.rbProfilPlayerDps.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbProfilPlayerDps.Location = new System.Drawing.Point(309, 268);
+            this.rbProfilPlayerDps.Name = "rbProfilPlayerDps";
+            this.rbProfilPlayerDps.Size = new System.Drawing.Size(70, 30);
+            this.rbProfilPlayerDps.TabIndex = 36;
+            this.rbProfilPlayerDps.TabStop = true;
+            this.rbProfilPlayerDps.Text = "DPS";
+            this.rbProfilPlayerDps.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rbProfilPlayerHeal
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(128, 312);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(86, 30);
-            this.radioButton1.TabIndex = 34;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "TANK";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbProfilPlayerHeal.AutoSize = true;
+            this.rbProfilPlayerHeal.Checked = true;
+            this.rbProfilPlayerHeal.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbProfilPlayerHeal.Location = new System.Drawing.Point(220, 268);
+            this.rbProfilPlayerHeal.Name = "rbProfilPlayerHeal";
+            this.rbProfilPlayerHeal.Size = new System.Drawing.Size(83, 30);
+            this.rbProfilPlayerHeal.TabIndex = 35;
+            this.rbProfilPlayerHeal.TabStop = true;
+            this.rbProfilPlayerHeal.Text = "HEAL";
+            this.rbProfilPlayerHeal.UseVisualStyleBackColor = true;
             // 
-            // lblRegistrationCharacterName
+            // rbProfilPlayerTank
             // 
-            this.lblRegistrationCharacterName.AutoSize = true;
-            this.lblRegistrationCharacterName.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRegistrationCharacterName.Location = new System.Drawing.Point(32, 50);
-            this.lblRegistrationCharacterName.Name = "lblRegistrationCharacterName";
-            this.lblRegistrationCharacterName.Size = new System.Drawing.Size(64, 26);
-            this.lblRegistrationCharacterName.TabIndex = 32;
-            this.lblRegistrationCharacterName.Text = "Nom :";
+            this.rbProfilPlayerTank.AutoSize = true;
+            this.rbProfilPlayerTank.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbProfilPlayerTank.Location = new System.Drawing.Point(128, 268);
+            this.rbProfilPlayerTank.Name = "rbProfilPlayerTank";
+            this.rbProfilPlayerTank.Size = new System.Drawing.Size(86, 30);
+            this.rbProfilPlayerTank.TabIndex = 34;
+            this.rbProfilPlayerTank.TabStop = true;
+            this.rbProfilPlayerTank.Text = "TANK";
+            this.rbProfilPlayerTank.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // lblProfilPlayerCharacterNameTitle
             // 
-            this.textBox3.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(187, 47);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 33);
-            this.textBox3.TabIndex = 31;
-            this.textBox3.Text = "NomDePersonnage";
+            this.lblProfilPlayerCharacterNameTitle.AutoSize = true;
+            this.lblProfilPlayerCharacterNameTitle.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfilPlayerCharacterNameTitle.Location = new System.Drawing.Point(32, 50);
+            this.lblProfilPlayerCharacterNameTitle.Name = "lblProfilPlayerCharacterNameTitle";
+            this.lblProfilPlayerCharacterNameTitle.Size = new System.Drawing.Size(64, 26);
+            this.lblProfilPlayerCharacterNameTitle.TabIndex = 32;
+            this.lblProfilPlayerCharacterNameTitle.Text = "Nom :";
             // 
-            // lblRegistrationFaction
+            // tbProfilPlayerCharacterName
             // 
-            this.lblRegistrationFaction.AutoSize = true;
-            this.lblRegistrationFaction.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRegistrationFaction.Location = new System.Drawing.Point(32, 114);
-            this.lblRegistrationFaction.Name = "lblRegistrationFaction";
-            this.lblRegistrationFaction.Size = new System.Drawing.Size(88, 26);
-            this.lblRegistrationFaction.TabIndex = 24;
-            this.lblRegistrationFaction.Text = "Faction :";
+            this.tbProfilPlayerCharacterName.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbProfilPlayerCharacterName.Location = new System.Drawing.Point(187, 47);
+            this.tbProfilPlayerCharacterName.Name = "tbProfilPlayerCharacterName";
+            this.tbProfilPlayerCharacterName.Size = new System.Drawing.Size(200, 33);
+            this.tbProfilPlayerCharacterName.TabIndex = 31;
+            this.tbProfilPlayerCharacterName.Text = "NomDePersonnage";
             // 
-            // rbRegistrationAlliance
+            // lblProfilPlayerFactionTitle
             // 
-            this.rbRegistrationAlliance.AutoSize = true;
-            this.rbRegistrationAlliance.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbRegistrationAlliance.Location = new System.Drawing.Point(152, 114);
-            this.rbRegistrationAlliance.Name = "rbRegistrationAlliance";
-            this.rbRegistrationAlliance.Size = new System.Drawing.Size(100, 30);
-            this.rbRegistrationAlliance.TabIndex = 25;
-            this.rbRegistrationAlliance.Text = "Alliance";
-            this.rbRegistrationAlliance.UseVisualStyleBackColor = true;
+            this.lblProfilPlayerFactionTitle.AutoSize = true;
+            this.lblProfilPlayerFactionTitle.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfilPlayerFactionTitle.Location = new System.Drawing.Point(32, 95);
+            this.lblProfilPlayerFactionTitle.Name = "lblProfilPlayerFactionTitle";
+            this.lblProfilPlayerFactionTitle.Size = new System.Drawing.Size(88, 26);
+            this.lblProfilPlayerFactionTitle.TabIndex = 24;
+            this.lblProfilPlayerFactionTitle.Text = "Faction :";
             // 
-            // rbRegistrationHorde
+            // rbProfilPlayerAlliance
             // 
-            this.rbRegistrationHorde.AutoSize = true;
-            this.rbRegistrationHorde.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbRegistrationHorde.Location = new System.Drawing.Point(258, 114);
-            this.rbRegistrationHorde.Name = "rbRegistrationHorde";
-            this.rbRegistrationHorde.Size = new System.Drawing.Size(88, 30);
-            this.rbRegistrationHorde.TabIndex = 26;
-            this.rbRegistrationHorde.TabStop = true;
-            this.rbRegistrationHorde.Text = "Horde";
-            this.rbRegistrationHorde.UseVisualStyleBackColor = true;
+            this.rbProfilPlayerAlliance.AutoSize = true;
+            this.rbProfilPlayerAlliance.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbProfilPlayerAlliance.Location = new System.Drawing.Point(152, 95);
+            this.rbProfilPlayerAlliance.Name = "rbProfilPlayerAlliance";
+            this.rbProfilPlayerAlliance.Size = new System.Drawing.Size(100, 30);
+            this.rbProfilPlayerAlliance.TabIndex = 25;
+            this.rbProfilPlayerAlliance.Text = "Alliance";
+            this.rbProfilPlayerAlliance.UseVisualStyleBackColor = true;
             // 
-            // lblRegistrationRace
+            // rbProfilPlayerHorde
             // 
-            this.lblRegistrationRace.AutoSize = true;
-            this.lblRegistrationRace.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRegistrationRace.Location = new System.Drawing.Point(32, 185);
-            this.lblRegistrationRace.Name = "lblRegistrationRace";
-            this.lblRegistrationRace.Size = new System.Drawing.Size(66, 26);
-            this.lblRegistrationRace.TabIndex = 27;
-            this.lblRegistrationRace.Text = "Race :";
+            this.rbProfilPlayerHorde.AutoSize = true;
+            this.rbProfilPlayerHorde.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbProfilPlayerHorde.Location = new System.Drawing.Point(258, 95);
+            this.rbProfilPlayerHorde.Name = "rbProfilPlayerHorde";
+            this.rbProfilPlayerHorde.Size = new System.Drawing.Size(88, 30);
+            this.rbProfilPlayerHorde.TabIndex = 26;
+            this.rbProfilPlayerHorde.TabStop = true;
+            this.rbProfilPlayerHorde.Text = "Horde";
+            this.rbProfilPlayerHorde.UseVisualStyleBackColor = true;
             // 
-            // lbRegistrationRace
+            // lblProfilPlayerRaceTitle
             // 
-            this.lbRegistrationRace.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbRegistrationRace.FormattingEnabled = true;
-            this.lbRegistrationRace.ItemHeight = 24;
-            this.lbRegistrationRace.Items.AddRange(new object[] {
+            this.lblProfilPlayerRaceTitle.AutoSize = true;
+            this.lblProfilPlayerRaceTitle.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfilPlayerRaceTitle.Location = new System.Drawing.Point(32, 141);
+            this.lblProfilPlayerRaceTitle.Name = "lblProfilPlayerRaceTitle";
+            this.lblProfilPlayerRaceTitle.Size = new System.Drawing.Size(66, 26);
+            this.lblProfilPlayerRaceTitle.TabIndex = 27;
+            this.lblProfilPlayerRaceTitle.Text = "Race :";
+            // 
+            // lbProfilPlayerRace
+            // 
+            this.lbProfilPlayerRace.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbProfilPlayerRace.FormattingEnabled = true;
+            this.lbProfilPlayerRace.ItemHeight = 24;
+            this.lbProfilPlayerRace.Items.AddRange(new object[] {
             "Nain",
             "Elfe de la nuit",
             "Gnome",
             "Humain"});
-            this.lbRegistrationRace.Location = new System.Drawing.Point(152, 185);
-            this.lbRegistrationRace.Name = "lbRegistrationRace";
-            this.lbRegistrationRace.Size = new System.Drawing.Size(224, 28);
-            this.lbRegistrationRace.TabIndex = 28;
+            this.lbProfilPlayerRace.Location = new System.Drawing.Point(152, 141);
+            this.lbProfilPlayerRace.Name = "lbProfilPlayerRace";
+            this.lbProfilPlayerRace.Size = new System.Drawing.Size(224, 28);
+            this.lbProfilPlayerRace.TabIndex = 28;
             // 
-            // lblRegistrationRole
+            // lblProfilPlayerRoleTitle
             // 
-            this.lblRegistrationRole.AutoSize = true;
-            this.lblRegistrationRole.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRegistrationRole.Location = new System.Drawing.Point(32, 312);
-            this.lblRegistrationRole.Name = "lblRegistrationRole";
-            this.lblRegistrationRole.Size = new System.Drawing.Size(61, 26);
-            this.lblRegistrationRole.TabIndex = 33;
-            this.lblRegistrationRole.Text = "Rôle :";
+            this.lblProfilPlayerRoleTitle.AutoSize = true;
+            this.lblProfilPlayerRoleTitle.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfilPlayerRoleTitle.Location = new System.Drawing.Point(32, 268);
+            this.lblProfilPlayerRoleTitle.Name = "lblProfilPlayerRoleTitle";
+            this.lblProfilPlayerRoleTitle.Size = new System.Drawing.Size(61, 26);
+            this.lblProfilPlayerRoleTitle.TabIndex = 33;
+            this.lblProfilPlayerRoleTitle.Text = "Rôle :";
             // 
-            // lblRegistrationClass
+            // lblProfilPlayerClassTitle
             // 
-            this.lblRegistrationClass.AutoSize = true;
-            this.lblRegistrationClass.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRegistrationClass.Location = new System.Drawing.Point(32, 245);
-            this.lblRegistrationClass.Name = "lblRegistrationClass";
-            this.lblRegistrationClass.Size = new System.Drawing.Size(84, 26);
-            this.lblRegistrationClass.TabIndex = 29;
-            this.lblRegistrationClass.Text = "Classe : ";
+            this.lblProfilPlayerClassTitle.AutoSize = true;
+            this.lblProfilPlayerClassTitle.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfilPlayerClassTitle.Location = new System.Drawing.Point(32, 201);
+            this.lblProfilPlayerClassTitle.Name = "lblProfilPlayerClassTitle";
+            this.lblProfilPlayerClassTitle.Size = new System.Drawing.Size(84, 26);
+            this.lblProfilPlayerClassTitle.TabIndex = 29;
+            this.lblProfilPlayerClassTitle.Text = "Classe : ";
             // 
-            // lbRegistrationClass
+            // lbProfilPlayerClass
             // 
-            this.lbRegistrationClass.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbRegistrationClass.FormattingEnabled = true;
-            this.lbRegistrationClass.ItemHeight = 24;
-            this.lbRegistrationClass.Items.AddRange(new object[] {
+            this.lbProfilPlayerClass.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbProfilPlayerClass.FormattingEnabled = true;
+            this.lbProfilPlayerClass.ItemHeight = 24;
+            this.lbProfilPlayerClass.Items.AddRange(new object[] {
             "Prêtre",
             "Chasseur",
             "Voleur",
@@ -285,97 +301,100 @@
             "Chaman",
             "Druide",
             "Mage"});
-            this.lbRegistrationClass.Location = new System.Drawing.Point(152, 245);
-            this.lbRegistrationClass.Name = "lbRegistrationClass";
-            this.lbRegistrationClass.Size = new System.Drawing.Size(224, 28);
-            this.lbRegistrationClass.TabIndex = 30;
+            this.lbProfilPlayerClass.Location = new System.Drawing.Point(152, 201);
+            this.lbProfilPlayerClass.Name = "lbProfilPlayerClass";
+            this.lbProfilPlayerClass.Size = new System.Drawing.Size(224, 28);
+            this.lbProfilPlayerClass.TabIndex = 30;
             // 
-            // button3
+            // btnProfilPlayerSave
             // 
-            this.button3.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(332, 724);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(126, 35);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Enregistrer";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnProfilPlayerSave.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfilPlayerSave.Location = new System.Drawing.Point(332, 724);
+            this.btnProfilPlayerSave.Name = "btnProfilPlayerSave";
+            this.btnProfilPlayerSave.Size = new System.Drawing.Size(126, 35);
+            this.btnProfilPlayerSave.TabIndex = 9;
+            this.btnProfilPlayerSave.Text = "Enregistrer";
+            this.btnProfilPlayerSave.UseVisualStyleBackColor = true;
+            this.btnProfilPlayerSave.Click += new System.EventHandler(this.btnProfilPlayerSave_Click);
             // 
-            // button2
+            // btnProfilPlayerClose
             // 
-            this.button2.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(24, 724);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(92, 35);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Fermer";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnProfilPlayerClose.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfilPlayerClose.Location = new System.Drawing.Point(24, 724);
+            this.btnProfilPlayerClose.Name = "btnProfilPlayerClose";
+            this.btnProfilPlayerClose.Size = new System.Drawing.Size(92, 35);
+            this.btnProfilPlayerClose.TabIndex = 8;
+            this.btnProfilPlayerClose.Text = "Fermer";
+            this.btnProfilPlayerClose.UseVisualStyleBackColor = true;
+            this.btnProfilPlayerClose.Click += new System.EventHandler(this.btnProfilPlayerClose_Click);
             // 
-            // groupBox3
+            // gbProfilPlayerGuildInformations
             // 
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.button1);
-            this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(24, 553);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(435, 165);
-            this.groupBox3.TabIndex = 7;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Informations de Guilde";
+            this.gbProfilPlayerGuildInformations.Controls.Add(this.lblProfilPlayerGrade);
+            this.gbProfilPlayerGuildInformations.Controls.Add(this.lblProfilPlayerGradeTitle);
+            this.gbProfilPlayerGuildInformations.Controls.Add(this.lblProfilPlayerGuildName);
+            this.gbProfilPlayerGuildInformations.Controls.Add(this.btnProfilPlayerGuildQuit);
+            this.gbProfilPlayerGuildInformations.Controls.Add(this.lblProfilPlayerGuildNameTitle);
+            this.gbProfilPlayerGuildInformations.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbProfilPlayerGuildInformations.Location = new System.Drawing.Point(24, 553);
+            this.gbProfilPlayerGuildInformations.Name = "gbProfilPlayerGuildInformations";
+            this.gbProfilPlayerGuildInformations.Size = new System.Drawing.Size(435, 165);
+            this.gbProfilPlayerGuildInformations.TabIndex = 7;
+            this.gbProfilPlayerGuildInformations.TabStop = false;
+            this.gbProfilPlayerGuildInformations.Text = "Informations de Guilde";
             // 
-            // label4
+            // lblProfilPlayerGrade
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(137, 36);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(137, 28);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "NomDeGuilde";
+            this.lblProfilPlayerGrade.AutoSize = true;
+            this.lblProfilPlayerGrade.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfilPlayerGrade.Location = new System.Drawing.Point(137, 64);
+            this.lblProfilPlayerGrade.Name = "lblProfilPlayerGrade";
+            this.lblProfilPlayerGrade.Size = new System.Drawing.Size(81, 26);
+            this.lblProfilPlayerGrade.TabIndex = 5;
+            this.lblProfilPlayerGrade.Text = "Vétéran";
             // 
-            // button1
+            // lblProfilPlayerGradeTitle
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(220, 106);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(182, 34);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Quitter la guilde";
-            this.button1.UseVisualStyleBackColor = false;
+            this.lblProfilPlayerGradeTitle.AutoSize = true;
+            this.lblProfilPlayerGradeTitle.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfilPlayerGradeTitle.Location = new System.Drawing.Point(46, 65);
+            this.lblProfilPlayerGradeTitle.Name = "lblProfilPlayerGradeTitle";
+            this.lblProfilPlayerGradeTitle.Size = new System.Drawing.Size(77, 26);
+            this.lblProfilPlayerGradeTitle.TabIndex = 4;
+            this.lblProfilPlayerGradeTitle.Text = "Grade :";
             // 
-            // label3
+            // lblProfilPlayerGuildName
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(46, 39);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 26);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Nom :";
+            this.lblProfilPlayerGuildName.AutoSize = true;
+            this.lblProfilPlayerGuildName.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfilPlayerGuildName.Location = new System.Drawing.Point(137, 36);
+            this.lblProfilPlayerGuildName.Name = "lblProfilPlayerGuildName";
+            this.lblProfilPlayerGuildName.Size = new System.Drawing.Size(137, 28);
+            this.lblProfilPlayerGuildName.TabIndex = 3;
+            this.lblProfilPlayerGuildName.Text = "NomDeGuilde";
             // 
-            // label5
+            // btnProfilPlayerGuildQuit
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(46, 65);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 26);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Grade :";
+            this.btnProfilPlayerGuildQuit.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnProfilPlayerGuildQuit.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfilPlayerGuildQuit.ForeColor = System.Drawing.Color.Red;
+            this.btnProfilPlayerGuildQuit.Location = new System.Drawing.Point(220, 106);
+            this.btnProfilPlayerGuildQuit.Name = "btnProfilPlayerGuildQuit";
+            this.btnProfilPlayerGuildQuit.Size = new System.Drawing.Size(182, 34);
+            this.btnProfilPlayerGuildQuit.TabIndex = 2;
+            this.btnProfilPlayerGuildQuit.Text = "Quitter la guilde";
+            this.btnProfilPlayerGuildQuit.UseVisualStyleBackColor = false;
+            this.btnProfilPlayerGuildQuit.Click += new System.EventHandler(this.btnProfilPlayerGuildQuit_Click);
             // 
-            // label6
+            // lblProfilPlayerGuildNameTitle
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(137, 64);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(81, 26);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Vétéran";
+            this.lblProfilPlayerGuildNameTitle.AutoSize = true;
+            this.lblProfilPlayerGuildNameTitle.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfilPlayerGuildNameTitle.Location = new System.Drawing.Point(46, 39);
+            this.lblProfilPlayerGuildNameTitle.Name = "lblProfilPlayerGuildNameTitle";
+            this.lblProfilPlayerGuildNameTitle.Size = new System.Drawing.Size(64, 26);
+            this.lblProfilPlayerGuildNameTitle.TabIndex = 0;
+            this.lblProfilPlayerGuildNameTitle.Text = "Nom :";
             // 
             // frmProfilPlayer
             // 
@@ -383,52 +402,55 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(485, 779);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.btnProfilPlayerSave);
+            this.Controls.Add(this.btnProfilPlayerClose);
+            this.Controls.Add(this.gbProfilPlayerGuildInformations);
+            this.Controls.Add(this.gbProfilPlayerCharacterInformations);
+            this.Controls.Add(this.gbProfilPlayerAccountIntomations);
             this.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmProfilPlayer";
-            this.Text = "frmProfilPlayer";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.Text = "Page de profil";
+            this.Load += new System.EventHandler(this.frmProfilPlayer_Load);
+            this.gbProfilPlayerAccountIntomations.ResumeLayout(false);
+            this.gbProfilPlayerAccountIntomations.PerformLayout();
+            this.gbProfilPlayerCharacterInformations.ResumeLayout(false);
+            this.gbProfilPlayerCharacterInformations.PerformLayout();
+            this.gbProfilPlayerGuildInformations.ResumeLayout(false);
+            this.gbProfilPlayerGuildInformations.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label lblRegistrationCharacterName;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label lblRegistrationFaction;
-        private System.Windows.Forms.RadioButton rbRegistrationAlliance;
-        private System.Windows.Forms.RadioButton rbRegistrationHorde;
-        private System.Windows.Forms.Label lblRegistrationRace;
-        private System.Windows.Forms.ListBox lbRegistrationRace;
-        private System.Windows.Forms.Label lblRegistrationRole;
-        private System.Windows.Forms.Label lblRegistrationClass;
-        private System.Windows.Forms.ListBox lbRegistrationClass;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.GroupBox gbProfilPlayerAccountIntomations;
+        private System.Windows.Forms.Label lblProfilPlayerEmailTitle;
+        private System.Windows.Forms.TextBox tbProfilPlayerPassword;
+        private System.Windows.Forms.Label lblProfilPlayerPasswordTitle;
+        private System.Windows.Forms.TextBox tbProfilPlayerEmail;
+        private System.Windows.Forms.GroupBox gbProfilPlayerCharacterInformations;
+        private System.Windows.Forms.Label lblProfilPlayerCharacterNameTitle;
+        private System.Windows.Forms.TextBox tbProfilPlayerCharacterName;
+        private System.Windows.Forms.Label lblProfilPlayerFactionTitle;
+        private System.Windows.Forms.RadioButton rbProfilPlayerAlliance;
+        private System.Windows.Forms.RadioButton rbProfilPlayerHorde;
+        private System.Windows.Forms.Label lblProfilPlayerRaceTitle;
+        private System.Windows.Forms.ListBox lbProfilPlayerRace;
+        private System.Windows.Forms.Label lblProfilPlayerRoleTitle;
+        private System.Windows.Forms.Label lblProfilPlayerClassTitle;
+        private System.Windows.Forms.ListBox lbProfilPlayerClass;
+        private System.Windows.Forms.RadioButton rbProfilPlayerDps;
+        private System.Windows.Forms.RadioButton rbProfilPlayerHeal;
+        private System.Windows.Forms.RadioButton rbProfilPlayerTank;
+        private System.Windows.Forms.Button btnProfilPlayerSave;
+        private System.Windows.Forms.Button btnProfilPlayerClose;
+        private System.Windows.Forms.GroupBox gbProfilPlayerGuildInformations;
+        private System.Windows.Forms.Label lblProfilPlayerGuildName;
+        private System.Windows.Forms.Button btnProfilPlayerGuildQuit;
+        private System.Windows.Forms.Label lblProfilPlayerGuildNameTitle;
+        private System.Windows.Forms.Label lblProfilPlayerGrade;
+        private System.Windows.Forms.Label lblProfilPlayerGradeTitle;
+        private System.Windows.Forms.Button btnProfilPlayerAccountDelete;
     }
 }

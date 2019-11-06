@@ -31,13 +31,13 @@ namespace Guildator
                 //Si le joueur est en attente de guilde rediriger vers frmGuildWaiting
 
                 //Pour tests
-                if (tbLoginIdentifiant.Text == "guild@master.ch")
+                if (tbLoginEmail.Text == "guild@master.ch")
                 {
                     frmHomeGuildMaster frmHomeGuildMaster = new frmHomeGuildMaster();
                     frmHomeGuildMaster.Show();
                     this.Hide();
                 }
-                else if (tbLoginIdentifiant.Text == "user@exemple.com")
+                else if (tbLoginEmail.Text == "user@exemple.com")
                 {
                     frmHomePlayer frmHomePlayer = new frmHomePlayer();
                     frmHomePlayer.Show();
@@ -48,7 +48,7 @@ namespace Guildator
         }
 
         private Boolean checkLogin() {
-            if (tbLoginIdentifiant.Text.Equals(""))
+            if (tbLoginEmail.Text.Equals(""))
             {
                 lblLoginError.Text = "Veuillez entrer une adresse mail";
                 return false;

@@ -34,17 +34,19 @@
             this.lblAddGuildName = new System.Windows.Forms.Label();
             this.btnAddGuildSave = new System.Windows.Forms.Button();
             this.btnAddGuildClose = new System.Windows.Forms.Button();
+            this.lblAddGuildeNameError = new System.Windows.Forms.Label();
             this.gbAddGuildInformations.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbAddGuildInformations
             // 
+            this.gbAddGuildInformations.Controls.Add(this.lblAddGuildeNameError);
             this.gbAddGuildInformations.Controls.Add(this.tbAddGuildName);
             this.gbAddGuildInformations.Controls.Add(this.lblAddGuildName);
             this.gbAddGuildInformations.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbAddGuildInformations.Location = new System.Drawing.Point(12, 12);
             this.gbAddGuildInformations.Name = "gbAddGuildInformations";
-            this.gbAddGuildInformations.Size = new System.Drawing.Size(495, 142);
+            this.gbAddGuildInformations.Size = new System.Drawing.Size(495, 151);
             this.gbAddGuildInformations.TabIndex = 0;
             this.gbAddGuildInformations.TabStop = false;
             this.gbAddGuildInformations.Text = "Créer une Guilde";
@@ -76,6 +78,7 @@
             this.btnAddGuildSave.TabIndex = 1;
             this.btnAddGuildSave.Text = "Enregistrer";
             this.btnAddGuildSave.UseVisualStyleBackColor = true;
+            this.btnAddGuildSave.Click += new System.EventHandler(this.btnAddGuildSave_Click);
             // 
             // btnAddGuildClose
             // 
@@ -87,6 +90,16 @@
             this.btnAddGuildClose.Text = "Quitter";
             this.btnAddGuildClose.UseVisualStyleBackColor = true;
             this.btnAddGuildClose.Click += new System.EventHandler(this.btnAddGuildClose_Click);
+            // 
+            // lblAddGuildeNameError
+            // 
+            this.lblAddGuildeNameError.AutoSize = true;
+            this.lblAddGuildeNameError.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddGuildeNameError.ForeColor = System.Drawing.Color.Red;
+            this.lblAddGuildeNameError.Location = new System.Drawing.Point(56, 110);
+            this.lblAddGuildeNameError.Name = "lblAddGuildeNameError";
+            this.lblAddGuildeNameError.Size = new System.Drawing.Size(0, 24);
+            this.lblAddGuildeNameError.TabIndex = 2;
             // 
             // frmAddGuild
             // 
@@ -114,5 +127,6 @@
         private System.Windows.Forms.Label lblAddGuildName;
         private System.Windows.Forms.Button btnAddGuildSave;
         private System.Windows.Forms.Button btnAddGuildClose;
+        private System.Windows.Forms.Label lblAddGuildeNameError;
     }
 }

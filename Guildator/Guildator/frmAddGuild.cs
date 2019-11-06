@@ -29,5 +29,28 @@ namespace Guildator
             frmLogin.Show();
             this.Hide();
         }
+
+        private void btnAddGuildSave_Click(object sender, EventArgs e)
+        {
+            if (checkGuildName()) {
+                frmHomeGuildMaster frmHomeGuildMaster = new frmHomeGuildMaster();
+                frmHomeGuildMaster.Show();
+                this.Dispose();
+            }
+
+        }
+
+        private Boolean checkGuildName() {
+            //Création de la guilde
+            //Check si nom de guilde deja pris
+            if (tbAddGuildName.Text.Equals(""))
+            {
+                lblAddGuildeNameError.Text = "Merci d'entrer un nom de guilde";
+                return false;
+            }
+            return true;
+        }
+
+        
     }
 }

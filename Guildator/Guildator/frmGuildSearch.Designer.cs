@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGuildSearch));
             this.lblGuildSearchName = new System.Windows.Forms.Label();
             this.tbGuildSearchName = new System.Windows.Forms.TextBox();
@@ -40,6 +41,7 @@
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblGuildSearchGuildNameError = new System.Windows.Forms.Label();
             this.gbGuildSearchSearch.SuspendLayout();
             this.gbGuildSearchInformations.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGuildSearchList)).BeginInit();
@@ -81,7 +83,7 @@
             this.btnGuildSearchBack.Name = "btnGuildSearchBack";
             this.btnGuildSearchBack.Size = new System.Drawing.Size(97, 37);
             this.btnGuildSearchBack.TabIndex = 5;
-            this.btnGuildSearchBack.Text = "Fermer";
+            this.btnGuildSearchBack.Text = "Quitter";
             this.btnGuildSearchBack.UseVisualStyleBackColor = true;
             this.btnGuildSearchBack.Click += new System.EventHandler(this.btnGuildSearchBack_Click);
             // 
@@ -98,13 +100,14 @@
             // 
             // gbGuildSearchSearch
             // 
+            this.gbGuildSearchSearch.Controls.Add(this.lblGuildSearchGuildNameError);
             this.gbGuildSearchSearch.Controls.Add(this.tbGuildSearchName);
             this.gbGuildSearchSearch.Controls.Add(this.btnGuildSearchAction);
             this.gbGuildSearchSearch.Controls.Add(this.lblGuildSearchName);
             this.gbGuildSearchSearch.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbGuildSearchSearch.Location = new System.Drawing.Point(12, 12);
             this.gbGuildSearchSearch.Name = "gbGuildSearchSearch";
-            this.gbGuildSearchSearch.Size = new System.Drawing.Size(445, 159);
+            this.gbGuildSearchSearch.Size = new System.Drawing.Size(445, 179);
             this.gbGuildSearchSearch.TabIndex = 10;
             this.gbGuildSearchSearch.TabStop = false;
             this.gbGuildSearchSearch.Text = "Rechercher une guilde";
@@ -113,15 +116,23 @@
             // 
             this.gbGuildSearchInformations.Controls.Add(this.dgvGuildSearchList);
             this.gbGuildSearchInformations.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbGuildSearchInformations.Location = new System.Drawing.Point(12, 177);
+            this.gbGuildSearchInformations.Location = new System.Drawing.Point(12, 206);
             this.gbGuildSearchInformations.Name = "gbGuildSearchInformations";
-            this.gbGuildSearchInformations.Size = new System.Drawing.Size(445, 243);
+            this.gbGuildSearchInformations.Size = new System.Drawing.Size(445, 214);
             this.gbGuildSearchInformations.TabIndex = 11;
             this.gbGuildSearchInformations.TabStop = false;
             this.gbGuildSearchInformations.Text = "Liste des Guildes";
             // 
             // dgvGuildSearchList
             // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvGuildSearchList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvGuildSearchList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGuildSearchList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -156,6 +167,16 @@
             this.Column3.Name = "Column3";
             this.Column3.Width = 125;
             // 
+            // lblGuildSearchGuildNameError
+            // 
+            this.lblGuildSearchGuildNameError.AutoSize = true;
+            this.lblGuildSearchGuildNameError.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGuildSearchGuildNameError.ForeColor = System.Drawing.Color.Red;
+            this.lblGuildSearchGuildNameError.Location = new System.Drawing.Point(103, 142);
+            this.lblGuildSearchGuildNameError.Name = "lblGuildSearchGuildNameError";
+            this.lblGuildSearchGuildNameError.Size = new System.Drawing.Size(0, 24);
+            this.lblGuildSearchGuildNameError.TabIndex = 5;
+            // 
             // frmGuildSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -189,5 +210,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.Label lblGuildSearchGuildNameError;
     }
 }

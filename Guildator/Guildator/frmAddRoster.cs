@@ -26,5 +26,19 @@ namespace Guildator
         {
 
         }
+
+        private void btnAddRosterSave_Click(object sender, EventArgs e)
+        {
+            if (tbAddRosterName.Text.Equals("")) {
+                lblAddRosterNameError.Text = "Veuillez saisir un nom de roster";
+            }
+
+            //Si listes vides -> erreur
+        }
+
+        private void btnAddRosterClose_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

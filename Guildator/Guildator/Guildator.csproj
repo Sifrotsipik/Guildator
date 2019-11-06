@@ -58,6 +58,12 @@
     <Compile Include="frmAddOrSearchGuild.Designer.cs">
       <DependentUpon>frmAddOrSearchGuild.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAddPlayerToRaid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddPlayerToRaid.Designer.cs">
+      <DependentUpon>frmAddPlayerToRaid.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAddRaid.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,12 @@
     </Compile>
     <Compile Include="frmAddGuild.Designer.cs">
       <DependentUpon>frmAddGuild.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmComponentDemandDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComponentDemandDetails.Designer.cs">
+      <DependentUpon>frmComponentDemandDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="frmGuildSearch.cs">
       <SubType>Form</SubType>
@@ -156,6 +168,9 @@
     <EmbeddedResource Include="frmAddOrSearchGuild.resx">
       <DependentUpon>frmAddOrSearchGuild.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAddPlayerToRaid.resx">
+      <DependentUpon>frmAddPlayerToRaid.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAddRaid.resx">
       <DependentUpon>frmAddRaid.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAddRoster.resx">
       <DependentUpon>frmAddRoster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComponentDemandDetails.resx">
+      <DependentUpon>frmComponentDemandDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGuildSearch.resx">
       <DependentUpon>frmGuildSearch.cs</DependentUpon>
@@ -197,6 +215,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegistration.resx">
       <DependentUpon>frmRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRosterDetails.resx">
+      <DependentUpon>frmRosterDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -34,13 +34,13 @@ namespace Guildator
                 {
                     frmAddGuild frmAddGuild = new frmAddGuild();
                     frmAddGuild.Show();
-                    this.Hide();
+                    this.Dispose();
                 }
                 else
                 {
                     frmGuildSearch frmGuildSearch = new frmGuildSearch();
                     frmGuildSearch.Show();
-                    this.Hide();
+                    this.Dispose();
                 }
             }
 

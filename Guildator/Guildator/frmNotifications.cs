@@ -16,5 +16,20 @@ namespace Guildator
         {
             InitializeComponent();
         }
+
+        private void btnNotificationsClose_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void dgvNotificationsList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //Retirer la notification de la liste
+        }
+
+        private void frmNotifications_Load(object sender, EventArgs e)
+        {
+            this.AcceptButton = btnNotificationsClose;
+        }
     }
 }

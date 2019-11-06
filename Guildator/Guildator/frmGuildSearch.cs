@@ -17,14 +17,10 @@ namespace Guildator
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void btnGuildSearchAction_Click(object sender, EventArgs e)
         {
             //Adapter la dgvGuildSearch
+            //Si nom de guilde trouvé -> textbox en vert
         }
 
         private void btnGuildSearchBack_Click(object sender, EventArgs e)
@@ -34,10 +30,21 @@ namespace Guildator
 
         private void btnGuildSearchSave_Click(object sender, EventArgs e)
         {
-            //faire la demande pour rejoindre la guilde concernée
-            frmGuildWaiting frmGuildWaiting = new frmGuildWaiting();
-            frmGuildWaiting.Show();
-            this.Hide();
+            if (checkGuildName()) {
+                //faire la demande pour rejoindre la guilde concernée
+                frmGuildWaiting frmGuildWaiting = new frmGuildWaiting();
+                frmGuildWaiting.Show();
+                this.Dispose();
+            }
+
+        }
+
+        private Boolean checkGuildName() {
+            if (tbGuildSearchName.Text.Equals("")) {
+                lblGuildSearchGuildNameError.Text = "Merci d'entrer un nom de guilde";
+                return false;
+            }
+            return true;
         }
     }
 }

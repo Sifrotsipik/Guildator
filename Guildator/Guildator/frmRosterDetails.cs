@@ -16,5 +16,21 @@ namespace Guildator
         {
             InitializeComponent();
         }
+
+        private void frmRosterDetails_Load(object sender, EventArgs e)
+        {
+            this.AcceptButton = btnRosterDetailsSave;
+        }
+
+        private void btnRosterDetailsSave_Click(object sender, EventArgs e)
+        {
+            //Si modifications du roster -> update bdd
+            this.Dispose();
+        }
+
+        private void btnRosterDetailsClose_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

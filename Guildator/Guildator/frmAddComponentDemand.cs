@@ -24,13 +24,13 @@ namespace Guildator
 
         private void btnAddComponentDemandSave_Click(object sender, EventArgs e)
         {
-            if (lbAddComponentDemandeName.Text == "Sélectionnez un composant")
+            //if (lbAddComponentDemandeName.Text == "Sélectionnez un composant")
+            //{
+            //    lblAddComponentDemandNameTitle.ForeColor = Color.Red;
+            //}
+            if (nudAddComponentDemandQuantity.Value <= 0)
             {
-                lblAddComponentDemandName.ForeColor = Color.Red;
-            }
-            else if (nudAddComponentDemandQuantity.Value <= 0)
-            {
-                lblAddComponentDemandQuantity.ForeColor = Color.Red;
+                lblAddComponentDemandQuantityTitle.ForeColor = Color.Red;
             }
             else {
                 //Créer l'objet ComponentDemand
@@ -39,7 +39,7 @@ namespace Guildator
 
         private void btnAddComponentDemandClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Dispose();
         }
     }
 }

@@ -16,5 +16,11 @@ namespace Guildator
         {
             InitializeComponent();
         }
+
+        private void btnPlayerDetailsSave_Click(object sender, EventArgs e)
+        {
+            //Si changement de grade -> enregistrer le changement dans la bdd
+            this.Dispose();
+        }
     }
 }
